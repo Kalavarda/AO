@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+	<mipSW>-1</mipSW>
+	<mipsNumber>0</mipsNumber>
+	<generateMipChain>false</generateMipChain>
+	<type>DXT5</type>
+	<width>256</width>
+	<height>32</height>
+	<realWidth>256</realWidth>
+	<realHeight>32</realHeight>
+	<disableLODControl>false</disableLODControl>
+	<alphaTex>false</alphaTex>
+	<binaryFileSize>1067</binaryFileSize>
+	<binaryFile href="res44" />
+	<sourceFile href="HeaderBack.tga" />
+	<sourceFileCRC>-1954320574</sourceFileCRC>
+	<wrap>false</wrap>
+	<LocalizationInfo />
+	<inheritedSourceFile href="" />
+</UITexture>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+ <Name>Panel_Fon_Str</Name>
+ <Priority>10</Priority>
+ <BackLayer href="Texture/FonStr.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+ <Placement>
+  <QuantumScale>true</QuantumScale>
+ </Placement>
+ <TransparentInput>true</TransparentInput>
+ <Visible>false</Visible>
+</WidgetPanel>

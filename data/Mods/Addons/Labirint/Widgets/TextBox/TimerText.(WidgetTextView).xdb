@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>TimerText</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>30</Pos>
+			<Size>40</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>15</HighPos>
+			<Size>30</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="TimerText.txt" />
+	<TextValues />
+	<BackLayer href="" />
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+</WidgetTextView>

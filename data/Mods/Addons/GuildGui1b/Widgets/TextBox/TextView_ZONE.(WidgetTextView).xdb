@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>TextView_ZONE</Name>
+	<Priority>1</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>200</Size>
+			</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="TextView_ZONE.txt" />
+	<TextValues />
+	<BackLayer href="texture/Slot.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<TextStyle>
+			<multiline>false</multiline>
+			<wrapText>false</wrapText>
+			<ellipsis>true</ellipsis>
+	</TextStyle>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+</WidgetTextView>

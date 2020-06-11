@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<AutoStart>true</AutoStart>
+	<Forms>
+		<Item>
+			<Form href="Widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+			<Id>Main</Id>
+		</Item>
+	</Forms>
+	<MainFormId>Main</MainFormId>
+	<Name>BuffAnnounce</Name>
+	<localizedNameFileRef href="name.txt"/>
+	<localizedDescFileRef href="desc.txt"/>
+	<ScriptFileRefs>
+		<Item href="Locales.txt"/>
+		<Item href="DataBaseDefault.txt"/>
+		<Item href="Scripts/LibDnD.lua"/>
+		<Item href="Scripts/LibGS.lua"/>
+		<Item href="Scripts/mainscript.lua"/>
+	</ScriptFileRefs>
+	<author>Slashuur</author>
+	<texturesGroups>
+	<Item>
+		<groupName>PlayerClasses</groupName>
+		<textures href="Widgets/Textures/Classes/PlayerClasses.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+	</Item>
+	<Item>
+		<groupName>Targets</groupName>
+		<textures href="Widgets/OptionsNew/PageMark/Targets/RelatedTargets.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+	</Item>
+	<Item>
+		<groupName>Icons</groupName>
+		<textures href="Widgets/OptionsNew/PageBuffs/Icons.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+	</Item>
+	</texturesGroups>
+<addon_name>BuffAnnounce</addon_name><addon_date>1537450765</addon_date><addon_link>https://alloder.pro/files/file/147-buffannounce/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

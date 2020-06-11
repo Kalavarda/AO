@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedTextures>
+	<Items>
+		<Item><name>BARD</name><textureItem href="Bard.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>DRUID</name><textureItem href="Druid.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>ENGINEER</name><textureItem href="Engineer.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>MAGE</name><textureItem href="Mage.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>NECROMANCER</name><textureItem href="Necromancer.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>PALADIN</name><textureItem href="Paladin.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>PRIEST</name><textureItem href="Priest.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>PSIONIC</name><textureItem href="Psionic.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>STALKER</name><textureItem href="Stalker.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>WARRIOR</name><textureItem href="Warrior.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>CROWN</name><textureItem href="Crown.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>PET</name><textureItem href="Druid.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>WARLOCK</name><textureItem href="Warlock.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+	</Items>
+</UIRelatedTextures>

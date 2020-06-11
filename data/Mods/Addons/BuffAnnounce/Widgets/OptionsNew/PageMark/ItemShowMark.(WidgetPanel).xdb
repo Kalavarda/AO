@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>ItemShowMark</Name>
+	<Children>
+		<Item href="CBButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Text.(WidgetTextView).xdb#xpointer(/WidgetTextView)"/>
+	</Children>
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_BOTH</Align>
+		<Pos>30</Pos>
+		<HighPos>30</HighPos>
+	</X>
+	<Y>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Size>25</Size>
+		<Pos>30</Pos>
+	</Y>
+	</Placement>
+	<Visible>true</Visible>
+</WidgetPanel>

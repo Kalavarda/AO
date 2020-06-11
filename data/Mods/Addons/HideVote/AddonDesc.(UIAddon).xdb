@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <Name>HideVote</Name>
+  <localizedNameFileRef href="name.txt"/>
+  <localizedDescFileRef href="desc.txt"/>
+
+  <AutoStart>true</AutoStart>
+  <addonGroups/>
+
+  <Forms>
+    <Item>
+      <Form href="Widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+      <Id>MainForm</Id>
+    </Item>
+  </Forms>
+  <MainFormId>MainForm</MainFormId>
+
+  <ScriptFileRefs>
+    <Item href="Libs/LibDnD.lua"/>
+    <Item href="Libs/Lib_S-Worm-S.lua"/>
+    <Item href="Libs/AOClassLibrary.lua"/>
+    <Item href="Libs/Chat.lua"/>
+    
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+<!--    <Item href="Locales/Locales.lua" />-->
+    
+    <Item href="Scripts/HideVote.lua"/>
+    <Item href="Settings.txt"/>
+  </ScriptFileRefs>
+
+  <visObjects href=""/>
+  <aliasVisObjects href=""/>
+
+  <texts href=""/>
+  <textsGroups/>
+  <textures href=""/>
+  <texturesGroups>
+    <Item>
+<!--      <groupName>ButtonSortStates</groupName>
+      <textures href="Widgets/Prototypes/ButtonSort/Textures/ButtonSortStates.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)" />-->
+    </Item>
+  </texturesGroups>
+
+  <sounds href=""/>
+  <soundsGroups/>
+  <decalObjects href=""/>
+
+  <author>S-Worm-S</author>
+  <revision>1.0</revision>
+  <update>2017-12-23 21:02:21</update>
+  <www>http://alloder.pro.ru/forum/-</www>
+<addon_name>HideVote</addon_name><addon_date>1514985310</addon_date><addon_link>https://alloder.pro/files/file/424-hidevote/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

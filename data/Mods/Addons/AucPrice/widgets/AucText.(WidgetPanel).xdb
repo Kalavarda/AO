@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+    <Name>AucText</Name>
+	<Priority>5560</Priority>
+    <Children>
+		<Item href="gold.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="silver.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="cooper.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="gold2.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="silver2.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="cooper2.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="kri1.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="kri2.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+    </Children>
+	<BackLayer href="Textures/fon_auc.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+    <Placement>
+        <X>
+            <Align>WIDGET_ALIGN_LOW</Align>
+            <Size>250</Size>
+			<Pos>0</Pos>
+        </X>
+        <Y>
+            <Align>WIDGET_ALIGN_LOW</Align>
+            <Size>55</Size>
+			<Pos>0</Pos>
+        </Y>
+    </Placement>
+</WidgetPanel>

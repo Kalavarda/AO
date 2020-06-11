@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>MainPanel</Name>
+	<Priority>0</Priority>
+	<Children>
+		<Item href="Barrier.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<sizingWidget href="Barrier.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_CHILDREN</Sizing>
+			<Pos>5</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_CHILDREN</Sizing>
+			<Pos>400</Pos>
+		</Y>
+	</Placement>
+	<TransparentInput>false</TransparentInput>
+	<Visible>true</Visible>
+</WidgetPanel>

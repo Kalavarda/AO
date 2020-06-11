@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+ <AutoStart>true</AutoStart>
+ <Forms>
+   <Item>
+    <Form href="Widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+    <Id>Main</Id>
+   </Item>
+ </Forms>
+ <textures href="Resource/Textures.(UIRelatedTextures).xdb"/>
+ <visObjects href="Resource/relatedVisObjects.(UIRelatedVisObjects).xdb#xpointer(/UIRelatedVisObjects)"/>
+ <MainFormId>Main</MainFormId>
+ <Name>AcAddon</Name>
+ <ScriptFileRefs>
+  <Item href="Scripts/Ac_Script.lua"/>
+  <Item href="Scripts/Ac_Cfg.lua"/>
+  <Item href="Scripts/MainScript.lua"/>
+ </ScriptFileRefs>
+<addon_name>AcAddon</addon_name><addon_date>1564334500</addon_date><addon_link>https://alloder.pro/files/file/190-acaddon/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

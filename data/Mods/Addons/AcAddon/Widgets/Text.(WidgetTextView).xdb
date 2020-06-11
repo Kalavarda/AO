@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+ <Priority>1</Priority>
+ <Name>Text</Name>
+ <FormatFileRef href="Text/Text.txt" />
+ <TransparentInput>true</TransparentInput>
+ <Visible>false</Visible>
+ <Enabled>true</Enabled>
+ <TextValues />
+</WidgetTextView>

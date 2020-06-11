@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>SelectMode</Name>
+	<Priority>10000</Priority>
+	<Children>
+		<Item href="Button1.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button2.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button3.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button4.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Name1.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Name2.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Name3.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Name4.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<BackLayer href="Textures/MainFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>300</Pos>
+		<Size>280</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>200</Pos>
+		<Size>140</Size>
+	</Y>
+	</Placement>
+	<Visible>false</Visible>
+</WidgetPanel>

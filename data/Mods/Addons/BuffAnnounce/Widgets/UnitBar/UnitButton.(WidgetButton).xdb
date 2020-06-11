@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>UnitButton</Name>
+	<Priority>1000</Priority>
+	<Placement>
+		<X>
+            <Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>120</Size>
+		</X>
+		<Y>
+			<Pos>0</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<TextTag>button_selector</TextTag>
+	<Variants>
+		<Item>
+			<TextFileRef href="" />
+			<LayerHighlight href="Textures/Highlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			<PushedOffset x="0" y="0" />
+			<Reaction>SelectTarget</Reaction>
+		</Item>
+	</Variants>
+	<Enabled>false</Enabled>
+	<Visible>false</Visible>
+</WidgetButton>

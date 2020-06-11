@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+    <Name>PanelkaDND</Name>
+	<Priority>5000</Priority>
+	<Children>
+	<Item href="MButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	<Item href="RButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	<Item href="XButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	<Item href="SButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	<Item href="Checkbox.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	<Item href="PanelkaText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+    <BackLayer href="temp.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+    <Placement>
+        <X>
+            <Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+            <Size>191</Size>
+        </X>
+        <Y>
+            <Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+            <Size>28</Size>
+        </Y>
+    </Placement>
+	<reactionOnPointing>PanelkaDNDOnPointing</reactionOnPointing>
+</WidgetPanel>

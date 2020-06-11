@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Panel</Name>	
+	<Priority>500</Priority>
+	<BackLayer href="Textures/Frame.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+	<Children>
+	<Item href="CheckBox.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>0</Pos>
+			<Size>210</Size>
+		</X>
+		<Y>
+			<Pos>370</Pos>
+			<Size>40</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

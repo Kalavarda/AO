@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+ <Name>AcAddon</Name>
+ <Priority>3777</Priority>
+ <Children>
+  <Item href="Panel_Frame.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Frame_C.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Seting.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Set.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Set_A.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Set_D.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Free.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Free_C.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Texture.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Texture_A.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Texture_C.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Value.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Panel_Line.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_Clear.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_Close.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_Free.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_Free_D.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_High.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  <Item href="Button_High_T.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_High_D.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  <Item href="Button_Refresh.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+  <Item href="Button_Use.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  <Item href="Text.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+  <Item href="Scroll_Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+ </Children>
+ <BackLayer href="" />
+ <FrontLayer href="" />
+ <Placement>
+  <QuantumScale>false</QuantumScale>
+  <X>
+   <Align>WIDGET_ALIGN_BOTH</Align>
+   <Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+   <Pos>0</Pos>
+   <HighPos>0</HighPos>
+   <Size>0</Size>
+  </X>
+  <Y>
+   <Align>WIDGET_ALIGN_BOTH</Align>
+   <Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+   <Pos>0</Pos>
+   <HighPos>0</HighPos>
+   <Size>0</Size>
+  </Y>
+ </Placement>
+ <Visible>false</Visible>
+ <Enabled>true</Enabled>
+ <TransparentInput>false</TransparentInput>
+ <PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>OptionsNew</Name>
+	<Priority>200</Priority>
+	<Children>
+		<Item href="Header.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="FabButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Pages.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<BackLayer href="Textures/MainFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_CENTER</Align>
+		<Pos>0</Pos>
+		<Size>680</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_CENTER</Align>
+		<Pos>0</Pos>
+		<Size>585</Size>
+	</Y>
+	</Placement>
+	<Visible>false</Visible>
+</WidgetPanel>

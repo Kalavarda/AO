@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>DamVis</Name>
+	<Priority>20</Priority>
+	<!--<BackLayer href="/Mods/Addons/AddonsTools/GUI/MainFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />-->
+	<Children>
+		<Item href="Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		
+	</Children>
+	<Placement>
+		<sizingWidget href="Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		<X>
+			<Sizing>WIDGET_SIZING_CHILDREN</Sizing>
+		</X>
+		<Y>
+			<Sizing>WIDGET_SIZING_CHILDREN</Sizing>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<PickChildrenOnly>true</PickChildrenOnly>
+
+</WidgetPanel>

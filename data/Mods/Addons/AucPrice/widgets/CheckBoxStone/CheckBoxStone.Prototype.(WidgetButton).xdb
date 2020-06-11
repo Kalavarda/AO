@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Header>
+    <isPrototype>true</isPrototype>
+  </Header>
+  <Priority>256</Priority>
+  <Placement>
+    <X>
+      <Size>250</Size>
+    </X>
+    <Y>
+      <Size>63</Size>
+    </Y>
+  </Placement>
+  <IgnoreDblClick>true</IgnoreDblClick>
+  <Variants>
+    <Item>
+      <LayerHighlight href="" />
+      <StateNormal>
+        <LayerMain href="CBAuctionTabNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StateNormal>
+      <StatePushed>
+        <LayerMain href="CBAuctionTabSelected.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StatePushed>
+      <ReactionOnUp>true</ReactionOnUp>
+      <Reaction>mouse_left_click</Reaction>
+    </Item>
+    <Item>
+      <LayerHighlight href="" />
+      <StateNormal>
+        <LayerMain href="CBAuctionTabSelected.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StateNormal>      
+      <ReactionOnUp>true</ReactionOnUp>
+      <Reaction>mouse_left_click</Reaction>
+    </Item>
+  </Variants>
+</WidgetButton>

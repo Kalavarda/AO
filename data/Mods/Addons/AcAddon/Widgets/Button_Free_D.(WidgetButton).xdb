@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+ <Name>Button_Free_D</Name>
+ <Priority>1</Priority>
+ <Variants>
+  <Item>
+   <Reaction>Left_Click</Reaction>
+   <ReactionRightClick>RightClick</ReactionRightClick>
+   <reactionDblClick>DoubleClick</reactionDblClick>
+  </Item>
+ </Variants>
+ <Visible>false</Visible>
+ <IgnoreDblClick>false</IgnoreDblClick>
+</WidgetButton>

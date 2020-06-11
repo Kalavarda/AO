@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+ <Placement>
+  <X>
+   <Align>WIDGET_ALIGN_CENTER</Align>
+   <Size>4</Size>
+  </X>
+  <Y>
+   <Align>WIDGET_ALIGN_CENTER</Align>			
+   <Size>30</Size>
+  </Y>
+ </Placement>
+ <IgnoreDblClick>true</IgnoreDblClick>
+ <Visible>true</Visible>
+ <Variants>
+  <Item>
+   <StateNormal>
+    <LayerMain href="Slider.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+   </StateNormal>
+  </Item>
+ </Variants>
+</WidgetButton>

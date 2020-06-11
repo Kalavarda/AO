@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+ <Name>Panel_Line</Name>
+ <Priority>1</Priority>
+ <BackLayer href="Texture/Line.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+ <Placement>
+  <QuantumScale>true</QuantumScale>
+ </Placement>
+ <TransparentInput>true</TransparentInput>
+ <PickChildrenOnly>false</PickChildrenOnly>
+ <Visible>false</Visible>
+</WidgetPanel>

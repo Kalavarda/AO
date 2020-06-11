@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+  <mipsNumber>1</mipsNumber>
+  <type>DXT5</type>
+  <width>256</width>
+  <height>64</height>
+  <realWidth>222</realWidth>
+  <realHeight>44</realHeight>
+  <binaryFileSize>2407</binaryFileSize>
+  <binaryFile href="Header.(UITexture).bin" />
+</UITexture>

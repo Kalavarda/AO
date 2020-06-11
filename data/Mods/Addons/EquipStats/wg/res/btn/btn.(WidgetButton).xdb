@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>btn</Name>
+	<Priority>250</Priority>
+	<Placement>
+		<X>
+			<Size>200</Size>
+		</X>
+		<Y>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>false</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<TextFileRef href="Normal.txt" />
+			<StateNormal>
+				<FormatFileRef href="Normal.txt" />
+			</StateNormal>
+			<reactionDblClick>mouse_double_click</reactionDblClick>
+			<Reaction>LeftButton</Reaction>
+			<ReactionRightClick>RightButton</ReactionRightClick>
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+	</Variants>
+	<reactionOnPointing>mouse_over</reactionOnPointing>
+	<TextStyle>
+		<Align>ALIGNY_MIDDLE</Align>
+	</TextStyle>
+</WidgetButton>

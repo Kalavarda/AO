@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+ <Name>Button_Refresh</Name>
+ <Priority>1</Priority>
+ <Variants>
+  <Item>
+   <LayerHighlight href="Button/Refresh_High.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+   <StateNormal><LayerMain href="Button/Refresh.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerTiledTexture)" /></StateNormal>
+   <StatePushed><LayerMain href="Button/Refresh_Press.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerTiledTexture)" /></StatePushed>
+   <ReactionOnUp>true</ReactionOnUp>
+   <Reaction>Left_Click</Reaction>
+  </Item>
+ </Variants>
+ <Visible>false</Visible>
+ <IgnoreDblClick>true</IgnoreDblClick>
+</WidgetButton>

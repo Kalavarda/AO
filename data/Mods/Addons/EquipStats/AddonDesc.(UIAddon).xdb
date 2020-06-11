@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Forms>
+    <Item>
+      <Id>Main</Id>
+      <Form href="wg/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+    </Item>
+  </Forms>
+  <MainFormId>Main</MainFormId>
+  <Name>EquipStats</Name>
+  <localizedNameFileRef href="name.txt"/>
+  <localizedDescFileRef href="desc.txt"/>
+  <ScriptFileRefs>
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    <Item href="script/lib/ScriptLIB.lua"/>
+    <Item href="script/lib/LibDnD.lua"/>
+    <Item href="config.txt"/>
+    <Item href="script/mainscript.luac"/>
+  </ScriptFileRefs>
+  <author>Jed(Zeon)andLogg</author>
+  <revision>4.2.5</revision>
+  <texts href=""/>
+  <textures href="wg/res/Icons.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+  <update>2014-04-23 20:21:00</update>
+  <visObjects href=""/>
+  <www/>
+<addon_name>EquipStats</addon_name><addon_date>1590790145</addon_date><addon_link>https://alloder.pro/files/file/212-equipstats/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

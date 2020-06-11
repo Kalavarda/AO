@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>EquipStatsPanel</Name>
+	<Priority>1</Priority>
+	<Children>
+		<Item href="res/Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		<Item href="res/btn/btn.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="res/Texture.(WidgetPanel).xdb#xpointer(/WidgetPanel)" /> 
+		<Item href="res/text/text.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<BackLayer href="res/fon.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>460</Size>
+			<Pos>400</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>401</Size>
+			<Pos>150</Pos>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+</WidgetPanel>

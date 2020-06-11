@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>22</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>23</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<StateNormal>
+				<LayerMain href="res86#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<StateDisabled>
+				<LayerMain href="res90#xpointer(/WidgetLayerTiledTexture)" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+</WidgetButton>

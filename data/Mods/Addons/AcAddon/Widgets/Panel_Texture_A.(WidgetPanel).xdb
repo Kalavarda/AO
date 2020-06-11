@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+ <Name>Panel_Texture_A</Name>
+ <Priority>1</Priority>
+ <BackLayer href="Texture/Auto.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+ <Placement>
+  <QuantumScale>true</QuantumScale>
+ </Placement>
+ <TransparentInput>true</TransparentInput>
+ <PickChildrenOnly>true</PickChildrenOnly>
+ <Visible>false</Visible>
+</WidgetPanel>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>MainPanel</Name>
+	<Priority>2</Priority>
+	<Children>
+		<Item href="TextBox/TitleText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/News.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/DescFon.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="TextBox/TextView_NUM.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_INFO.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_CLS_ICO.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_CLASS.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_LVL.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_TAB.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_RNK.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_AUTH.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_MAUTH.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_MFAME.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_LOYAL.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_JOIN.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_WFAME.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_ACT.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TextView_ZONE.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Button/PushNick.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_NUM.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_NAME.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_CLS.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_LVL.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_TAB.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_RNK.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_AUTH.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_MAUTH.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_MFAME.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_LOY.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_JOIN.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_WFAME.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_ACT.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_ZONE.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Close.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/ListAll.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/GuiFriend.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Size.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="TextBox/Footer.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<BackLayer href="TextBox/texture/MainFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>180</Pos>
+			<Size>920</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>245</Pos>
+			<Size>535</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+</WidgetPanel>

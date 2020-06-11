@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>PageMark</Name>
+	<Priority>0</Priority>
+	<Children>
+		<Item href="ItemShowMark.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Preview.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		<Item href="ContainerItem.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Children>
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>1360</Pos>
+		<Size>680</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_BOTH</Align>
+	</Y>
+	</Placement>
+</WidgetPanel>

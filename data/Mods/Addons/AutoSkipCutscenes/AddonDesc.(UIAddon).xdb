@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Forms>
+    <Item>
+      <Form href="MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+      <Id>Main</Id>
+    </Item>
+  </Forms>
+  <MainFormId>Main</MainFormId>
+  <Name>AutoSkipCutscenes</Name>
+  <ScriptFileRefs>
+	<Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    <Item href="AutoSkipCutscenes.lua"/>
+  </ScriptFileRefs>
+  <texts href=""/>
+  <textures href=""/>
+  <visObjects href=""/>
+<addon_name>AutoSkipCutscenes</addon_name><addon_date>1538145852</addon_date><addon_link>https://alloder.pro/files/file/446-autoskipcutscenes/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

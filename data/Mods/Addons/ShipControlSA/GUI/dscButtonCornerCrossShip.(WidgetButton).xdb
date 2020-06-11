@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>dscButtonCornerCrossShip</Name>
+	<Back_Layer href="Textures/GoldenCorner.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Size>40</Size>
+		</X>
+		<Y>
+			<Size>37</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<Layer_Highlight href="Textures/CornerCrossHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			<StateNormal>
+				<LayerMain href="Textures/CornerCrossDownNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="Textures/CornerCrossDownPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StatePushed>
+			<Reaction>mouse_left_clickShip</Reaction>
+			<ReactionRightClick>mouse_right_clickShip</ReactionRightClick>
+
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+	</Variants>
+
+	<Visible>false</Visible>
+
+</WidgetButton>

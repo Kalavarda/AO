@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>TitleText</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>70</Pos>
+			<HighPos>70</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>-2</Pos>
+			<Size>32</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="TitleText.txt" />
+	<TextValues />
+	<BackLayer href="texture/Header.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+</WidgetTextView>

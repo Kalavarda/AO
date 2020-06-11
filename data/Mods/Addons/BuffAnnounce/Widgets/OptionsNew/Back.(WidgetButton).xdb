@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Back</Name>
+	<Priority>10</Priority>
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>15</Pos>
+		<Size>32</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>8</Pos>
+		<Size>32</Size>
+	</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="Textures/BackHighlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			<StateNormal>
+				<LayerMain href="Textures/Back.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<PushedOffset x="0" y="0" />
+			<ReactionOnUp>true</ReactionOnUp>
+			<Reaction>AcceptChanges</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

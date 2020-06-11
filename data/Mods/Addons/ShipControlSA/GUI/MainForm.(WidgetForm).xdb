@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+	<Name>ShipControl</Name>
+	<Priority>25000</Priority>
+	<Children>
+		<Item href="ErrorText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="DamVis.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscButtonCornerCrossShip.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="dscButtonCornerCrossRadar.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+
+		<Item href="hBm.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="hmW.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="hBW.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	
+		<Item href="dscBorder.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="dscButtonCornerCross.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="dscToggleButton.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="dscCheck.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="dscEditLine.(WidgetEditLine).xdb#xpointer(/WidgetEditLine)" />
+		<Item href="dscEditLineNum.(WidgetEditLine).xdb#xpointer(/WidgetEditLine)" />
+		<Item href="dscMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscMenuItemBtn.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="dscText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="dscPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscPanelOptions.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscPanelEmpty.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscPanelER.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscPanelReact.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscBar.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscBarHP.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="dscColorPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+		<Item href="dscColorSliderPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+		<Item href="ContainerOptions.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)"/>
+		
+
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>

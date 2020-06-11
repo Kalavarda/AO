@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>TextHeader</Name>
+	<Priority>4</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>10</Pos>
+			<Size>220</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>5</Pos>
+			<Size>25</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="TextHeader.txt" />
+	<TransparentInput>true</TransparentInput>
+</WidgetTextView>
+

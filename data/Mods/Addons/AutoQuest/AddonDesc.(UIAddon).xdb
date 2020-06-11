@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <Name>AutoQuest</Name>
+  <AutoStart>false</AutoStart>
+  <ScriptFileRefs>
+    <Item href="Libs/Chat.lua"/>
+
+    <Item href="Libs/Log.lua"/>
+
+  
+  
+    <Item href="AutoQuest.lua"/>
+  </ScriptFileRefs>
+  <visObjects href=""/>
+  <texts href=""/>
+  <www/>
+  <author>None</author>
+  <revision>2</revision>
+  <lastUpdate/>
+<addon_name>AutoQuest</addon_name><addon_date>1588161298</addon_date><addon_link>https://alloder.pro/files/file/381-autoquest/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

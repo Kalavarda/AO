@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>hBm</Name>
+	<Priority>2</Priority>
+	<BackLayer href="Textures/Artillery.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+	<textureMask href="Textures/hBmx256.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+
+	<clipContent>true</clipContent>
+	<Visible>false</Visible>
+	<PickChildrenOnly>true</PickChildrenOnly>
+
+</WidgetPanel>

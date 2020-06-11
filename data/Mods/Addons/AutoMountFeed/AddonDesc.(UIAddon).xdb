@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Forms>
+    <Item>
+      <Form href="Widgets/AutoMountFeed.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+      <Id>Main</Id>
+    </Item>
+  </Forms>
+  <MainFormId>Main</MainFormId>
+  <texturesGroups>
+    <Item>
+      <groupName>ButtonSortStates</groupName>
+      <textures href="Widgets/Prototypes/ButtonSort/Textures/ButtonSortStates.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+    </Item>
+  </texturesGroups>
+  <Name>AutoMountFeed</Name>
+  <ScriptFileRefs>
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    <Item href="Libs/Chat.lua"/>
+    <Item href="Libs/LibDnD.lua"/>
+    <Item href="Libs/Sort.lua"/>
+    <Item href="Libs/Log.lua"/>
+    <Item href="Libs/Widget.lua"/>	
+   		
+    <Item href="Locales/Locales.lua"/>
+    <Item href="Scripts/AddonLib.lua"/>
+    <Item href="Scripts/Settings.lua"/>
+    <Item href="Scripts/AutoMountFeed.lua"/>
+  </ScriptFileRefs>
+<addon_name>AutoMountFeed</addon_name><addon_date>1572197891</addon_date><addon_link>https://alloder.pro/files/file/22-automountfeed/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

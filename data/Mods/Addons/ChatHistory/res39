@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Header</Name>
+	<Children>
+		<Item href="res65#xpointer(/WidgetTextView)" />
+	</Children>
+	<BackLayer href="res38#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>222</Size>
+			<Pos>-4</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>45</Size>
+			<Pos>-258</Pos>
+		</Y>
+	</Placement>
+	<TransparentInput>false</TransparentInput>
+</WidgetPanel>

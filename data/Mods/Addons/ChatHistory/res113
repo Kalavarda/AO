@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Switch</Name>
+	<Children>
+	</Children>
+	<BackLayer href="res117#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>32</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>32</Size>
+			<Pos>40</Pos>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="res125#xpointer(/WidgetLayerTiledTexture)" />
+			<StateNormal>
+				<LayerMain href="res117#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="res117#xpointer(/WidgetLayerTiledTexture)" />
+			</StatePushed>
+			<Reaction>button_open</Reaction>
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+	</Variants>
+	<Visible>true</Visible>
+</WidgetButton>

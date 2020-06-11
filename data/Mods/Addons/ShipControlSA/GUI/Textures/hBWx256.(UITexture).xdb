@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+	<mipSW>-1</mipSW>
+	<mipsNumber>1</mipsNumber>
+	<generateMipChain>false</generateMipChain>
+	<type>DXT1</type>
+	<width>256</width>
+	<height>256</height>
+	<realWidth>256</realWidth>
+	<realHeight>256</realHeight>
+	<disableLODControl>false</disableLODControl>
+	<alphaTex>false</alphaTex>
+	<binaryFileSize>353</binaryFileSize>
+	<binaryFile href="hBWx256.(UITexture).bin" />
+	<sourceFile href="hBWx256.tga" />
+	<sourceFileCRC>-1412402366</sourceFileCRC>
+	<wrap>false</wrap>
+	<LocalizationInfo />
+</UITexture>

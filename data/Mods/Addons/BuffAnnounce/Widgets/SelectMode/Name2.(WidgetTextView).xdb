@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>Name2</Name>
+	<Priority>3</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>10</Pos>
+			<HighPos>10</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>45</Pos>
+			<Size>25</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="Name.txt" />
+</WidgetTextView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedTextures>
+ <Items>
+  <Item><name>b_players</name><textureItem href="Button/players.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_players_press</name><textureItem href="Button/players_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_units</name><textureItem href="Button/units.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_units_press</name><textureItem href="Button/units_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_bufs</name><textureItem href="Button/bufs.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_bufs_press</name><textureItem href="Button/bufs_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_targets</name><textureItem href="Button/targets.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_targets_press</name><textureItem href="Button/targets_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_teleports</name><textureItem href="Button/teleports.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_teleports_press</name><textureItem href="Button/teleports_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_minis</name><textureItem href="Button/minis.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_minis_press</name><textureItem href="Button/minis_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_potions</name><textureItem href="Button/potions.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_potions_press</name><textureItem href="Button/potions_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_skills</name><textureItem href="Button/skills.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_skills_press</name><textureItem href="Button/skills_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_notes</name><textureItem href="Button/notes.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_notes_press</name><textureItem href="Button/notes_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_setings</name><textureItem href="Button/setings.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_setings_press</name><textureItem href="Button/setings_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_info</name><textureItem href="Button/info.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_info_press</name><textureItem href="Button/info_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_general</name><textureItem href="Button/general.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+
+  <Item><name>b_enemy</name><textureItem href="Button/enemy.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_enemy_press</name><textureItem href="Button/enemy_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_empire</name><textureItem href="Button/empire.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_empire_press</name><textureItem href="Button/empire_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_league</name><textureItem href="Button/league.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_league_press</name><textureItem href="Button/league_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_all</name><textureItem href="Button/all.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_all_press</name><textureItem href="Button/all_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_agr</name><textureItem href="Button/agr.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_agr_press</name><textureItem href="Button/agr_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_friend</name><textureItem href="Button/friend.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_friend_press</name><textureItem href="Button/friend_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_i</name><textureItem href="Button/i.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_i_press</name><textureItem href="Button/i_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_group</name><textureItem href="Button/group.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_group_press</name><textureItem href="Button/group_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_raid</name><textureItem href="Button/raid.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>b_raid_press</name><textureItem href="Button/raid_press.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+
+  <Item><name>BARD</name><textureItem href="Classes/Bard.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>DRUID</name><textureItem href="Classes/Druid.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>MAGE</name><textureItem href="Classes/Mage.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>NECROMANCER</name><textureItem href="Classes/Necromancer.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>PALADIN</name><textureItem href="Classes/Paladin.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>PRIEST</name><textureItem href="Classes/Priest.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>PSIONIC</name><textureItem href="Classes/Psionic.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>STALKER</name><textureItem href="Classes/Stalker.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>WARRIOR</name><textureItem href="Classes/Warrior.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>ENGINEER</name><textureItem href="Classes/Engineer.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>WARLOCK</name><textureItem href="/Interface/Ingame/ContextRelatedTextures/PlayerClasses/Warlock.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+
+  <Item><name>i_empire</name><textureItem href="Icon/empire.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>i_league</name><textureItem href="Icon/league.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+
+  <Item><name>i_config_no</name><textureItem href="Icon/config_No.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+  <Item><name>i_config_yes</name><textureItem href="Icon/config_yes.(UISingleTexture).xdb#xpointer(/UISingleTexture)"/></Item>
+
+  <Item><name>i_unit</name><textureItem href="Icon/unit.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>i_dead</name><textureItem href="Icon/dead.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+
+  <Item><name>i_target</name><textureItem href="Icon/target.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>i_pointer</name><textureItem href="Icon/pointer.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+
+  <Item><name>i_gold</name><textureItem href="Icon/gold.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+  <Item><name>i_myrrh</name><textureItem href="Icon/myrrh.(UISingleTexture).xdb#xpointer(/UISingleTexture)" /></Item>
+
+  <Item><name>i_strength</name><textureItem href="Icon/Strength.(UISingleTexture).xdb" /></Item>
+  <Item><name>i_gain</name><textureItem href="Icon/gain.(UISingleTexture).xdb" /></Item>
+
+  <Item><name>i_question</name><textureItem href="Icon/Question.(UISingleTexture).xdb" /></Item>
+
+ </Items>
+</UIRelatedTextures>

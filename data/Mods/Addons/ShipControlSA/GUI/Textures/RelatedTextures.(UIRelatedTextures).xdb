@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedTextures>
+	<Items>
+
+
+		<Item>
+			<name>AstralShip</name>
+			<textureItem href="AstralShip.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>MarkAstralShip</name>
+			<textureItem href="MarkAstralShip.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>CannonAim</name>
+			<textureItem href="CannonAim.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>CannonAim2</name>
+			<textureItem href="CannonAim2.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>Beam</name>
+			<textureItem href="Artillery.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>Helm</name>
+			<textureItem href="Helm.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>LCannon</name>
+			<textureItem href="LCannon.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>RCannon</name>
+			<textureItem href="RCannon.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>Drive</name>
+			<textureItem href="Motor.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>Reactor</name>
+			<textureItem href="Reactor.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>VDrive</name>
+			<textureItem href="Turbine.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>ShipSymbol</name>
+			<textureItem href="ShipSymbol.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>scale450</name>
+			<textureItem href="scale450.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>scale450b</name>
+			<textureItem href="scale450b.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>scale800</name>
+			<textureItem href="scale800.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>scale800a</name>
+			<textureItem href="scale800a.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>OrkAura01Glow</name>
+			<textureItem href="OrkAura01Glow.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>Monster</name>
+			<textureItem href="Monster.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+
+		<Item>
+			<name>ShieldHeadFront</name>
+			<textureItem href="ShieldHeadFront.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldHeadCore</name>
+			<textureItem href="ShieldHeadCore.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldHeadBack</name>
+			<textureItem href="ShieldHeadBack.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>ShieldLeftFront</name>
+			<textureItem href="ShieldLeftFront.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldLeftCore</name>
+			<textureItem href="ShieldLeftCore.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldLeftBack</name>
+			<textureItem href="ShieldLeftBack.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>ShieldRightFront</name>
+			<textureItem href="ShieldRightFront.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldRightCore</name>
+			<textureItem href="ShieldRightCore.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldRightBack</name>
+			<textureItem href="ShieldRightBack.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+
+		</Item>
+
+		<Item>
+			<name>ShieldRearFront</name>
+			<textureItem href="ShieldRearFront.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldRearCore</name>
+			<textureItem href="ShieldRearCore.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ShieldRearBack</name>
+			<textureItem href="ShieldRearBack.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>ShipPlateShieldArc</name>
+			<textureItem href="ShipPlateShieldArc.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>SlotHighlight</name>
+			<textureItem href="SlotHighlight.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>ScoresContainerItemOnline</name>
+			<textureItem href="ScoresContainerItemOnline.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+		<Item>
+			<name>hBWx256</name>
+			<textureItem href="hBWx256.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>hmWx256</name>
+			<textureItem href="hmWx256.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>hBmx256</name>
+			<textureItem href="hBmx256.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>0</name>
+			<textureItem href="0.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>1</name>
+			<textureItem href="1.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>2</name>
+			<textureItem href="2.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>3</name>
+			<textureItem href="3.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>4</name>
+			<textureItem href="4.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>5</name>
+			<textureItem href="5.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>6</name>
+			<textureItem href="6.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>7</name>
+			<textureItem href="7.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>8</name>
+			<textureItem href="8.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		
+		
+
+
+	</Items>
+
+</UIRelatedTextures>

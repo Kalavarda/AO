@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>UnitBar</Name>
+	<Priority>10</Priority>
+	<Children>
+		<Item href="Background.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Foreground.(WidgetPanel).xdb#xpointer.(/WidgetPanel)" />
+		<Item href="Name.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Bubble.(WidgetPanel).xdb#xpointer.(/WidgetPanel)" />
+		<Item href="Icon.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Level.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>120</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<TransparentInput>true</TransparentInput>
+</WidgetPanel>

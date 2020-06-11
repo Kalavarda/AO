@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+ <Name>Button_Use</Name>
+ <Priority>10</Priority>
+ <BackLayer href="Texture/U_Question.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+ <Variants>
+  <Item>
+   <LayerHighlight href="Texture/U_Highlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+   <StatePushed>
+    <LayerMain href="Texture/U_Pressed.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+   </StatePushed>
+   <ReactionOnUp>true</ReactionOnUp>
+   <Reaction>Left_Click</Reaction>
+  </Item>
+ </Variants>
+ <Visible>false</Visible>
+ <IgnoreDblClick>true</IgnoreDblClick>
+</WidgetButton>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Page1</Name>
+	<Priority>500</Priority>
+	<Children>
+		<Item href="PageText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>0</Pos>
+		<Size>150</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>48</Pos>
+		<Size>48</Size>
+	</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="" />
+			<StateNormal>
+				<LayerMain href="" />
+			</StateNormal>
+			<PushedOffset x="0" y="0" />
+			<ReactionOnUp>true</ReactionOnUp>
+			<Reaction>select_page</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

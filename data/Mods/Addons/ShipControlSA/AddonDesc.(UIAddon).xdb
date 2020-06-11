@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Description>ShipControl</Description>
+
+  <Forms>
+    <Item>
+      <Form href="GUI/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+      <Id>MainForm</Id>
+    </Item>
+  </Forms>
+
+  <MainFormId>MainForm</MainFormId>
+  <Name>ShipControl</Name>
+
+  <ScriptFileRefs>
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+
+	<Item href="Scripts/ScriptLIB.lua"/> 
+    <Item href="Scripts/menuCls3.lua"/>
+    <Item href="Scripts/LocalesLIB.lua"/>
+    
+    <Item href="Libs/Sort.lua"/>
+    <Item href="Libs/Widget.lua"/>
+    <Item href="Libs/Log.lua"/>
+    <Item href="Libs/Chat.lua"/>   
+	<Item href="Libs/LibDnD.lua"/>
+
+    <Item href="Locales/Locales.lua"/>
+    <Item href="Scripts/Globals.lua"/>
+    <Item href="config.txt"/>
+    <Item href="Scripts/GUI.lua"/>
+	<Item href="Scripts/Utils.lua"/>
+    <Item href="Scripts/ShortMap.lua"/>
+
+    <Item href="Scripts/Main.lua"/>
+  </ScriptFileRefs>
+
+
+  <textures href="GUI/Textures/RelatedTextures.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+  <localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/><addon_name>ShipControl</addon_name><addon_date>1571941279</addon_date><addon_link>https://alloder.pro/files/file/9-shipcontrol/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

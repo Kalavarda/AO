@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+	<mipSW>-1</mipSW>
+	<mipsNumber>1</mipsNumber>
+	<generateMipChain>false</generateMipChain>
+	<type>DXT1</type>
+	<width>1024</width>
+	<height>1024</height>
+	<realWidth>645</realWidth>
+	<realHeight>645</realHeight>
+	<disableLODControl>false</disableLODControl>
+	<alphaTex>true</alphaTex>
+	<binaryFileSize>8405</binaryFileSize>
+	<binaryFile href="CannonAim.(UITexture).bin" />
+	<sourceFile href="CannonAim.tga" />
+	<sourceFileCRC>1563637345</sourceFileCRC>
+	<wrap>false</wrap>
+	<LocalizationInfo />
+</UITexture>

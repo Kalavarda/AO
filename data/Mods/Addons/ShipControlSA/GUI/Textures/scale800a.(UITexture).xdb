@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+	<mipSW>-1</mipSW>
+	<mipsNumber>1</mipsNumber>
+	<generateMipChain>false</generateMipChain>
+	<type>DXT1</type>
+	<width>256</width>
+	<height>256</height>
+	<realWidth>212</realWidth>
+	<realHeight>212</realHeight>
+	<disableLODControl>false</disableLODControl>
+	<alphaTex>true</alphaTex>
+	<binaryFileSize>2286</binaryFileSize>
+	<binaryFile href="scale800a.(UITexture).bin" />
+	<sourceFile href="scale800a.tga" />
+	<sourceFileCRC>-996887364</sourceFileCRC>
+	<wrap>false</wrap>
+	<LocalizationInfo />
+</UITexture>

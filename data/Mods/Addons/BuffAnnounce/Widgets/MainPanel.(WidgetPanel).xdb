@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+    <Name>MainPanel</Name>
+	<Priority>100</Priority>
+	<Children>
+		<Item href="PanelkaDND/PanelkaDND.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="FadePanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Selection/Selection.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+    <BackLayer href="Textures/Buff.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+    <Placement>
+        <X>
+            <Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>200</Pos>
+            <Size>191</Size>
+        </X>
+        <Y>
+            <Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>200</Pos>
+            <Size>61</Size>
+        </Y>
+    </Placement>
+    <PickChildrenOnly>true</PickChildrenOnly>
+</WidgetPanel>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<Name>ClassPlates</Name>
+	<AutoStart>true</AutoStart>
+	<Forms>
+		<Item>
+		<Form href="MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+		<Id>Main</Id>
+		</Item>
+	</Forms>
+	<MainFormId>Main</MainFormId>
+	<ScriptFileRefs>
+	<Item href="LibDnD.lua"/>
+	<Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+	<Item href="PlateFetch.lua"/>
+	<Item href="ClassPlates.lua"/>
+	</ScriptFileRefs>
+	<author>Ciuine</author>
+	<revision>3</revision>
+	<texts href=""/>
+	<textures href=""/>
+	<update>2011-06-11 21:59:36</update>
+	<visObjects href=""/>
+	<www>http://ui9.ru/forum/classplates</www>
+	<addon_name>ClassPlates</addon_name>
+	<addon_date>1553626657</addon_date>
+	<addon_link>https://alloder.pro/files/file/249-classplates/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link>
+	<localizedNameFileRef href="name.txt"/>
+	<localizedDescFileRef href="desc.txt"/>
+</UIAddon>

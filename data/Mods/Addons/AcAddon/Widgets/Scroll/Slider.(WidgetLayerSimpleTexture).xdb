@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetLayerSimpleTexture>
+ <Color>0xffcccccc</Color>
+ <Scaling>true</Scaling>
+ <textureItem href="Slider.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+</WidgetLayerSimpleTexture>

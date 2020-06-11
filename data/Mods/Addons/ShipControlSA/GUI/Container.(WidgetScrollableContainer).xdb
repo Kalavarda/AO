@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetScrollableContainer>
+	<Name>Container</Name>
+	<Priority>0</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>20</Pos>
+			<HighPos>20</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>12</Pos>
+			<HighPos>12</HighPos>
+		</Y>
+	</Placement>
+	<border href="ContainerBorder.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	<!--<tableStep>5</tableStep>-->
+	<elementsInterval>0</elementsInterval>
+	<PickChildrenOnly>true</PickChildrenOnly>
+
+</WidgetScrollableContainer>

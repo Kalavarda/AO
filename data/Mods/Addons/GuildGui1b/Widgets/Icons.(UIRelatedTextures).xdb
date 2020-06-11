@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedTextures>
+	<Items>
+		<Item>
+			<name>BARD</name>
+			<textureItem href="Icons/Classes/Bard.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>DRUID</name>
+			<textureItem href="Icons/Classes/Druid.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>MAGE</name>
+			<textureItem href="Icons/Classes/Mage.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>NECROMANCER</name>
+			<textureItem href="Icons/Classes/Necromancer.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>PALADIN</name>
+			<textureItem href="Icons/Classes/Paladin.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>PRIEST</name>
+			<textureItem href="Icons/Classes/Priest.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>PSIONIC</name>
+			<textureItem href="Icons/Classes/Psionic.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>STALKER</name>
+			<textureItem href="Icons/Classes/Stalker.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>WARRIOR</name>
+			<textureItem href="Icons/Classes/Warrior.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>ENGINEER</name>
+			<textureItem href="Icons/Classes/Engineer.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>		
+		<Item>
+			<name>WARLOCK</name>
+			<textureItem href="Icons/Classes/Warlock.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>	
+
+		<Item>
+			<name>TABARD0</name>
+			<textureItem href="Icons/Tabard/Tabard0.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>TABARD1</name>
+			<textureItem href="Icons/Tabard/Tabard1.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>TABARD2</name>
+			<textureItem href="Icons/Tabard/Tabard2.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>TABARD3</name>
+			<textureItem href="Icons/Tabard/Tabard3.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>TABARD4</name>
+			<textureItem href="Icons/Tabard/Tabard4.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>TABARD5</name>
+			<textureItem href="Icons/Tabard/Tabard5.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>SEX0</name>
+			<textureItem href="Icons/Sex/Sex0.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>SEX1</name>
+			<textureItem href="Icons/Sex/Sex1.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>SEX2</name>
+			<textureItem href="Icons/Sex/Sex2.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+
+	</Items>
+</UIRelatedTextures>

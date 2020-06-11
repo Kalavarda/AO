@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+ <mipSW>-1</mipSW>
+ <mipsNumber>1</mipsNumber>
+ <generateMipChain>false</generateMipChain>
+ <type>DXT1</type>
+ <width>16</width>
+ <height>16</height>
+ <realWidth>16</realWidth>
+ <realHeight>16</realHeight>
+ <disableLODControl>false</disableLODControl>
+ <alphaTex>false</alphaTex>
+ <binaryFileSize>40</binaryFileSize>
+ <binaryFile href="Line.(UITexture).bin" />
+ <binaryFileSize2>0</binaryFileSize2>
+ <binaryFile2 href="" />
+ <wrap>false</wrap>
+ <LocalizationInfo />
+ <atlasPart>true</atlasPart>
+ <pool>UNDEFINED</pool>
+</UITexture>

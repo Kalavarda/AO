@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>PageBuffs</Name>
+	<Priority>0</Priority>
+	<Children>
+		<Item href="Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		<Item href="LabelBuffName.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="LabelOnUnit.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="LabelOnMobs.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>0</Pos>
+		<Size>680</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_BOTH</Align>
+	</Y>
+	</Placement>
+</WidgetPanel>

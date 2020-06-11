@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Channel</Name>
+	<Children>
+		<Item href="res11#xpointer(/WidgetButton)" />
+		<Item href="res58#xpointer(/WidgetTextView)" />
+		<Item href="res12#xpointer(/WidgetButton)" />
+	</Children>
+	<BackLayer href="res10#xpointer(/WidgetLayerTiledTexture)" />
+	<FrontLayer href="Checked.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>329</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>50</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+</WidgetPanel>

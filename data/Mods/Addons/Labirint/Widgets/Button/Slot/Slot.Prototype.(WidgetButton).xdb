@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Header>
+    <isPrototype>true</isPrototype>
+  </Header>
+  <Priority>256</Priority>
+  <Placement>
+    <X>
+      <Size>64</Size>
+    </X>
+    <Y>
+      <Size>64</Size>
+    </Y>
+  </Placement>
+  <IgnoreDblClick>true</IgnoreDblClick>
+  <Variants>
+    <Item>
+	  <TextFileRef href="ButtonFormatNormal.txt" />
+      <LayerHighlight href="SlotHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      <StateNormal>
+        <LayerMain href="SlotNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+		<FormatFileRef  href="ButtonFormatNormal.txt" />
+      </StateNormal>
+      <StatePushed>
+        <LayerMain href="SlotPushed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+		<FormatFileRef  href="ButtonFormatNormal.txt" />
+      </StatePushed>
+      <ReactionOnUp>true</ReactionOnUp>
+	  <Reaction>mouse_left_click</Reaction>
+    </Item>
+    <Item>
+	  <TextFileRef href="ButtonFormatNormal.txt" />
+      <LayerHighlight href="SlotHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      <StateNormal>
+        <LayerMain href="SlotPushed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+		<FormatFileRef  href="ButtonFormatNormal.txt" />
+      </StateNormal>      
+      <ReactionOnUp>true</ReactionOnUp>
+	  <Reaction>mouse_left_click</Reaction>
+    </Item>
+  </Variants>
+</WidgetButton>

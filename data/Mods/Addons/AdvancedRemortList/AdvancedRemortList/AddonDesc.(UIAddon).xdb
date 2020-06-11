@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Name>AdvancedRemortList</Name>
+  <ScriptFileRefs>
+    <Item href="mainscript.lua"/>
+  </ScriptFileRefs>
+<localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/><addon_name>AdvancedRemortList</addon_name><addon_date>1496501114</addon_date><addon_link>https://alloder.pro/files/file/399-advancedremortlist/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

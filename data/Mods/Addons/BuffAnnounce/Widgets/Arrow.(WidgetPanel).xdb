@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+    <Name>Arrow</Name>
+	<Priority>100</Priority>
+	<Children>
+	<Item href="ArrowText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+    <BackLayer href="Textures/Arrow.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+    <Placement>
+        <X>
+            <Align>WIDGET_ALIGN_CENTER</Align>
+		<Pos>0</Pos>
+            <Size>100</Size>
+        </X>
+        <Y>
+            <Align>WIDGET_ALIGN_CENTER</Align>
+		<Pos>-75</Pos>
+            <Size>100</Size>
+        </Y>
+    </Placement>
+	<TransparentInput>true</TransparentInput>
+</WidgetPanel>

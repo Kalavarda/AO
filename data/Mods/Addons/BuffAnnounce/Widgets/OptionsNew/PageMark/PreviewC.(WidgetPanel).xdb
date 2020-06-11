@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>PreviewC</Name>
+	<Priority>0</Priority>
+	<BackLayer href="Targets/Empty.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+	<FrontLayer href="Targets/Empty.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>0</Pos>
+			<Size>96</Size>
+		</X>
+		<Y>
+			<Pos>100</Pos>
+			<Size>96</Size>
+		</Y>
+	</Placement>
+	<TransparentInput>true</TransparentInput>
+	<PickChildrenOnly>true</PickChildrenOnly>
+	<clipContent>false</clipContent>
+</WidgetPanel>

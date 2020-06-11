@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetGlideScrollBar>
+	<Name>GlideScrollBar</Name>
+	<Priority>8</Priority>	
+	<BackLayer href="" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>			
+			<HighPos>0</HighPos>
+			<Size>10</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+</WidgetGlideScrollBar>

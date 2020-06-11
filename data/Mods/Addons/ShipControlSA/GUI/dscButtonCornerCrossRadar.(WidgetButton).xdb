@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>dscButtonCornerCrossRadar</Name>
+	<Bac_kLayer href="Textures/GoldenCorner.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Size>40</Size>
+		</X>
+		<Y>
+			<Size>38</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<Layer_Highlight href="Textures/CornerCrossHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			<StateNormal>
+				<LayerMain href="Textures/CornerCrossUpNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="Textures/CornerCrossUpPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StatePushed>
+			<Reaction>mouse_left_clickRadar</Reaction>
+			<ReactionRightClick>mouse_right_clickRadar</ReactionRightClick>
+
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+	</Variants>
+
+	<Visible>false</Visible>
+
+</WidgetButton>

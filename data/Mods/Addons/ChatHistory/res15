@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Channels</Name>
+	<Children>
+		<Item href="res14#xpointer(/WidgetScrollableContainer)" />
+		<Item href="res1#xpointer(/WidgetButton)" />
+		<Item href="res39#xpointer(/WidgetPanel)" />
+	</Children>
+	<BackLayer href="res33#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>380</Size>
+			<Pos>100</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>200</Pos>
+			<Size>560</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<TransparentInput>false</TransparentInput>
+</WidgetPanel>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Forms>
+    <Item>
+      <Form href="widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+      <Id>Main</Id>
+    </Item>
+  </Forms>
+  <MainFormId>Main</MainFormId>
+  <Name>AucPrice</Name>
+  <ScriptFileRefs>
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    <Item href="scripts/LibDnD.lua"/>
+	<Item href="scripts/AucPrice.luac"/>
+  </ScriptFileRefs>
+  <author>Logg</author>
+  <revision>7</revision>
+  <www/>
+<addon_name>AucPrice</addon_name><addon_date>1558297317</addon_date><addon_link>https://alloder.pro/files/file/313-aucprice/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

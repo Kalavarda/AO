@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Button</Name>
+	<Children>
+	</Children>
+	<BackLayer href="res53#xpointer(/WidgetLayerSimpleTexture)" />
+	<FrontLayer href="" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>329</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<LayerHighlight href="res53#xpointer(/WidgetLayerSimpleTexture)" />
+			<StateNormal>
+				<LayerMain href="" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="" />
+			</StatePushed>
+			<Reaction>check_channel</Reaction>
+			<ReactionOnUp>false</ReactionOnUp>
+		</Item>
+	</Variants>
+	<Visible>true</Visible>
+</WidgetButton>

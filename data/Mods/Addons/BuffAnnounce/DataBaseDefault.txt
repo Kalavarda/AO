@@ -1,0 +1,40 @@
+----------------------------------------------------------------------------------------------------------
+-- Начальная база бафов. Загружается при первом запуске аддона или при сбросе списка бафов в настройках.
+-- После первого запуска аддона или сброса список пересохраняется в конфиг игры (Personal/user.cfg)
+-- и все дальнейшие изменения сохраняются там, а этот список уже ни на что не влияет.
+--
+-- В настройках аддона можно экспортировать текущий список бафов в файл Personal/Logs/mods.txt
+-- и заменить им список в этом файле, если хотите загружать этот список бафов при сбросе.
+-- Так можно сохранить резервную копию своего списка бафов или поделиться этим списком с друзьями.
+----------------------------------------------------------------------------------------------------------
+
+Global("DataBaseDefault", {
+	[1] = { name = "Всадник"; onUnits = true; onMobs = false },
+	[2] = { name = "Штурмовая броня"; onUnits = true; onMobs = false },
+	[3] = { name = "Нокдаун"; onUnits = true; onMobs = true },
+	[4] = { name = "Страх"; onUnits = true; onMobs = true },
+	[5] = { name = "Оглушение"; onUnits = true; onMobs = true },
+	[6] = { name = "Ослепление"; onUnits = true; onMobs = true },
+	[7] = { name = "Немота"; onUnits = true; onMobs = true },
+	[8] = { name = "Безоружность"; onUnits = true; onMobs = true },
+	[9] = { name = "Обездвиживание"; onUnits = true; onMobs = true },
+	[10] = { name = "Оцепенение"; onUnits = true; onMobs = true },
+	[11] = { name = "Подкрепление "; onUnits = true; onMobs = false },
+	[12] = { name = "Брешь в броне"; onUnits = true; onMobs = false },
+	[13] = { name = "Выбит из седла"; onUnits = true; onMobs = false },
+	[14] = { name = "Наводчик"; onUnits = true; onMobs = false },
+	[15] = { name = "Лидерство"; onUnits = true; onMobs = false },
+	[16] = { name = "Голем захвачен!"; onUnits = true; onMobs = false },
+	[17] = { name = "Храбрость"; onUnits = true; onMobs = false },
+	[18] = { name = "Ускорение"; onUnits = true; onMobs = false },
+	[19] = { name = "Коварство"; onUnits = true; onMobs = false },
+	[20] = { name = "Доблесть"; onUnits = true; onMobs = false },
+	[21] = { name = "Жажда крови"; onUnits = true; onMobs = false },
+	[22] = { name = "Мощь"; onUnits = true; onMobs = false },
+	[23] = { name = "Защита"; onUnits = true; onMobs = false },
+	[24] = { name = "Уязвимость"; onUnits = true; onMobs = false },
+	[25] = { name = "Ошеломление"; onUnits = true; onMobs = false },
+	[26] = { name = "Трусость"; onUnits = true; onMobs = false },
+	[27] = { name = "Раны"; onUnits = true; onMobs = false },
+	[28] = { name = "Слабость"; onUnits = true; onMobs = false },
+})

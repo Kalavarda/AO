@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<AutoStart>true</AutoStart>
+	<Forms>
+		<Item>
+			<Form href="res64#xpointer(/WidgetForm)"/>
+			<Id>Main</Id>
+		</Item>
+	</Forms>
+	<MainFormId>Main</MainFormId>
+	<Name>ChatHistory</Name>
+	<ScriptFileRefs>
+		<Item href="LibDnD.lua"/>
+		<Item href="mainscript.lua"/>
+	</ScriptFileRefs>
+	<texts href=""/>
+	<textures href="res66#xpointer(/UIRelatedTextures)"/>
+<addon_name>ChatHistory</addon_name><addon_date>1541016808</addon_date><addon_link>https://alloder.pro/files/file/451-chathistory/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

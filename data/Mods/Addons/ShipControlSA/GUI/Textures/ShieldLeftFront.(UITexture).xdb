@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+	<mipSW>-1</mipSW>
+	<mipsNumber>1</mipsNumber>
+	<generateMipChain>false</generateMipChain>
+	<type>DXT5</type>
+	<width>256</width>
+	<height>512</height>
+	<realWidth>256</realWidth>
+	<realHeight>512</realHeight>
+	<disableLODControl>false</disableLODControl>
+	<alphaTex>true</alphaTex>
+	<binaryFileSize>13326</binaryFileSize>
+	<binaryFile href="ShieldLeftFront.(UITexture).bin" />
+	<sourceFile href="ShieldLeftFront.tga" />
+	<sourceFileCRC>767721680</sourceFileCRC>
+	<wrap>false</wrap>
+	<LocalizationInfo />
+</UITexture>

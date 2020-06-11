@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetEditLine>
+	<Name>EditLine</Name>
+	<Priority>2000</Priority>
+	<Children />
+	<BackLayer href="TextBox/texture/MainFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<FrontLayer href="" />
+	<textureMask href="" />
+	<pickMask href="" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<sizingWidget href="" />
+		<sizingWidgets />
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>300</Pos>
+			<HighPos>0</HighPos>
+			<Size>200</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>100</Pos>
+			<HighPos>0</HighPos>
+			<Size>50</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TabOrder>0</TabOrder>
+	<bindSections />
+	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>false</PickChildrenOnly>
+	<IgnoreDblClick>false</IgnoreDblClick>
+	<fade>1</fade>
+	<Cursor1Layer href="" />
+	<Cursor2Layer href="" />
+	<CursorWidth>2</CursorWidth>
+	<CursorChangeTimeMs>500</CursorChangeTimeMs>
+	<ReactionEsc />
+	<ReactionEnter />
+	<ReactionChanged />
+	<TextStyle>
+		<multiline>false</multiline>
+		<wrapText>true</wrapText>
+		<showClippedSymbol>false</showClippedSymbol>
+		<showClippedLine>true</showClippedLine>
+		<lineSpacing>0</lineSpacing>
+		<ellipsis>true</ellipsis>
+		<Align>ALIGNY_DEFAULT</Align>
+	</TextStyle>
+	<isPassword>false</isPassword>
+	<maxSymbolsCount>-1</maxSymbolsCount>
+	<filterAlias />
+	<globalClassName />
+	<selectionClassName />
+	<selectionLayer href="" />
+</WidgetEditLine>

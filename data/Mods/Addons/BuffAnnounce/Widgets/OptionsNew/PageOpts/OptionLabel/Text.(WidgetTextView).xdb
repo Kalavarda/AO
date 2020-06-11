@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>Text</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<FormatFileRef href="Text.txt" />
+	<TextValues />
+	<BackLayer href="" />
+	<Enabled>true</Enabled>
+	<TransparentInput>true</TransparentInput>
+</WidgetTextView>

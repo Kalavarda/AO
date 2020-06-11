@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>MainPanel</Name>
+	<Priority>2</Priority>
+	<Children>
+		<Item href="TextBox/TitleText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/TimerText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBox/Text.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Button/Sort_Nick.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Granit.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Korall.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Gold.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Glowing_Tear.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Shining_Tear.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Embrium.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Sort_Level.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Execute.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Close.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Button/Slot.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Children>
+	<BackLayer href="TextBox/texture/MainFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>180</Pos>
+			<Size>680</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>250</Pos>
+			<Size>430</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+</WidgetPanel>

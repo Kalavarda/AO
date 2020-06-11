@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Sort_Glowing_Tear</Name>
+	<Header>
+		<Prototype href="texture/SortButton.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>360</Pos>
+			<Size>70</Size>
+		</X>
+		<Y>
+			<Pos>30</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<TextFileRef href="ButtonFormatNormal.txt" />
+			<Reaction>Sort_Glowing_Tear</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

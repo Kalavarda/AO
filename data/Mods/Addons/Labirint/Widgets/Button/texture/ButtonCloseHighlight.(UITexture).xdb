@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+	<mipSW>-1</mipSW>
+	<mipsNumber>1</mipsNumber>
+	<generateMipChain>false</generateMipChain>
+	<type>DXT1</type>
+	<width>32</width>
+	<height>32</height>
+	<realWidth>32</realWidth>
+	<realHeight>32</realHeight>
+	<disableLODControl>false</disableLODControl>
+	<alphaTex>false</alphaTex>
+	<binaryFileSize>412</binaryFileSize>
+	<binaryFile href="ButtonCloseHighlight.(UITexture).bin" />
+	<sourceFile href="ButtonCloseHighlight.tga" />
+	<sourceFileCRC>-1458560498</sourceFileCRC>
+	<wrap>false</wrap>
+	<LocalizationInfo />
+	<inheritedSourceFile href="" />
+</UITexture>

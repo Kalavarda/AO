@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedTextures>
+	<Items>
+		<Item><name>Empty</name><textureItem href="Empty.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>ClassicTarget</name><textureItem href="ClassicTarget.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>ClassicTargetHighlight</name><textureItem href="ClassicTargetHighlight.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>TMEnemy</name><textureItem href="TMEnemy.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>TMFriend</name><textureItem href="TMFriend.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>TMNeutral</name><textureItem href="TMNeutral.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>Worms</name><textureItem href="Worms.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+		<Item><name>Arrow</name><textureItem href="Arrow.(UITextureElement).xdb#xpointer(/UITextureElement)"/></Item>
+	</Items>
+</UIRelatedTextures>

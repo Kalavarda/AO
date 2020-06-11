@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<Name>Labirint</Name>
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+		<Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+		<Item href="LibDnD.lua"/>
+		<Item href="Labirint.luac"/>
+	</ScriptFileRefs>
+	<MainFormId>Main</MainFormId>
+	<Forms>
+		<Item>
+			<Id>Main</Id>
+			<Form href="Widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+		</Item>
+	</Forms>
+	<visObjects href=""/>
+	<texts href=""/>
+	<textures href=""/>
+<addon_name>Labirint</addon_name><addon_date>1529213805</addon_date><addon_link>https://alloder.pro/files/file/149-labirint/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>

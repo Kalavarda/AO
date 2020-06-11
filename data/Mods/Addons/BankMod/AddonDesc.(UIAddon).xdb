@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<Name>BankMod</Name>
+	<localizedNameFileRef href="name.txt"/>
+	<localizedDescFileRef href="desc.txt"/>
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+		<Item href="Scripts/LibDnD.lua"/>
+		<Item href="Scripts/bankmod.lua"/>
+	</ScriptFileRefs>
+	<author>Pfui</author>
+	<revision>1</revision>
+<addon_name>BankMod</addon_name><addon_date>1554140389</addon_date><addon_link>https://alloder.pro/files/file/616-bankmod/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

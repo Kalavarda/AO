@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>PageOpts</Name>
+	<Priority>0</Priority>
+	<Children>
+		<Item href="Container.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		<Item href="OptionCheckBox/OptionCheckBox.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="OptionLabel/OptionLabel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="OptionSelector/OptionSelector.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="OptionButton/OptionButton.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>680</Pos>
+		<Size>680</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_BOTH</Align>
+	</Y>
+	</Placement>
+</WidgetPanel>

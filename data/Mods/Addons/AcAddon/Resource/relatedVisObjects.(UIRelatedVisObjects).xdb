@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedVisObjects>
+ <Items>
+  <Item><name>point_1</name><resource href="/Spells/FX/Spells/HelpArrowMarker.(VisObjectTemplate).xdb#xpointer(/VisObjectTemplate)" /></Item>
+  <Item><name>point_2</name><resource href="/Spells/FX/Spells/HelpArrowMarker_Green.(VisObjectTemplate).xdb#xpointer(/VisObjectTemplate)" /></Item>
+  <Item><name>point_3</name><resource href="/Spells/FX/Spells/OpTarget_Arrow.(VisObjectTemplate).xdb#xpointer(/VisObjectTemplate)" /></Item>
+ </Items>
+</UIRelatedVisObjects>

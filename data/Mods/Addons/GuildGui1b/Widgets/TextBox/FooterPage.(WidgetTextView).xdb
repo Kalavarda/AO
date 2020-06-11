@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>FooterPage</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>32</HighPos>
+			<Size>20</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>15</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="FooterPage.txt" />
+</WidgetTextView>

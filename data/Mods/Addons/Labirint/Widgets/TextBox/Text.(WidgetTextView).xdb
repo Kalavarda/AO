@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>Text</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>600</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>50</HighPos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="Text.txt" />
+	<TextValues />
+	<BackLayer href="" />
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+</WidgetTextView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>TextBottom1</Name>
+	<Priority>4</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>3</Pos>
+			<Size>120</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>15</Pos>
+			<Size>35</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="TextBottom.txt" />
+	<TransparentInput>true</TransparentInput>
+	<TextStyle>
+		<multiline>true</multiline>
+	</TextStyle>
+</WidgetTextView>
+

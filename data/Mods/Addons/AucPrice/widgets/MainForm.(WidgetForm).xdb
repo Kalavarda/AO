@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+	<Name>AucPrice</Name>
+	<Priority>5560</Priority>
+	<Children>
+		<Item href="ButtonShow.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="MainPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<BackLayer href="" />
+	<FrontLayer href="" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>

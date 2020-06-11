@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Sort_TAB</Name>
+	<Header>
+		<Prototype href="texture/SortButton.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>550</Pos>
+			<Size>35</Size>
+		</X>
+		<Y>
+			<Pos>60</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<TextFileRef href="ButtonFormatNormal.txt" />
+			<Reaction>Sort_TAB</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Forms>
+    <Item>
+      <Id>Main</Id>
+      <Form href="wg/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+    </Item>
+  </Forms>
+  <MainFormId>Main</MainFormId>
+  <Name>SundukTarget</Name>
+  <localizedNameFileRef href="name.txt"/>
+  <localizedDescFileRef href="desc.txt"/>
+  <ScriptFileRefs>
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+	<Item href="script/LibDnD.lua"/>
+	<Item href="script/config.lua"/>
+	<Item href="script/locales.lua"/>
+    <Item href="script/mainscript.luac"/>
+  </ScriptFileRefs>
+  <author>logg</author>
+  <revision>6</revision>
+  <texts href=""/>
+  <textures href="wg/res/Icons.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+<addon_name>SundukTarget</addon_name><addon_date>1591364365</addon_date><addon_link>https://alloder.pro/files/file/436-sunduktarget/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

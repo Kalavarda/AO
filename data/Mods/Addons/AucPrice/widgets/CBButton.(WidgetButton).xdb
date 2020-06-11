@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Name>CheckBoxButton</Name>
+  <Header>
+    <Prototype href="CheckBoxStone/CheckBoxStone.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  </Header>
+    <Children>
+		<Item href="TextBottom1.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="TextBottom2.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+    </Children>
+  <Placement>
+    <X>
+	  <Align>WIDGET_ALIGN_LOW</Align>
+      <Pos>868</Pos>
+    </X>
+    <Y>
+      <Align>WIDGET_ALIGN_LOW</Align>
+	  <Pos>646</Pos>
+    </Y>
+  </Placement>
+</WidgetButton>

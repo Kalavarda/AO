@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>WindowMain</Name>
+  <Priority>64</Priority>
+  <Children>
+    <Item href="Header/Header.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+    <Item href="Frame.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="BottomWidgets.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  </Children>
+  <Placement>
+    <X>
+      <Size>365</Size>
+    </X>
+    <Y>
+      <Size>348</Size>
+    </Y>
+  </Placement>
+  <PickChildrenOnly>true</PickChildrenOnly>
+  <Visible>false</Visible>
+</WidgetPanel>

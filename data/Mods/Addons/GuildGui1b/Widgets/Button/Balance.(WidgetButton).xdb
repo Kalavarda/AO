@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>ButtonBalance</Name>
+	<Header>
+		<Prototype href="/Mods/SampleCommon/Button/ButtonRegular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>150</Pos>
+			<Size>140</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>11</Pos>
+			<Size>23</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<Variants>
+		<Item>
+			<TextFileRef href="ButtonFormatNormal.txt" />
+			<Reaction>balance</Reaction>
+			<ReactionOnUp>false</ReactionOnUp>
+		</Item>
+	</Variants>
+</WidgetButton>

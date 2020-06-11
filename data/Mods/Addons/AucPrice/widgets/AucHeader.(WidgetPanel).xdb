@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+    <Name>AucHeader</Name>
+	<Priority>5560</Priority>
+    <Children>
+		<Item href="TextHeader.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+    </Children>
+	<BackLayer href="Textures/AuctionButton.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+    <Placement>
+        <X>
+            <Align>WIDGET_ALIGN_LOW</Align>
+            <Size>250</Size>
+			<Pos>868</Pos>
+        </X>
+        <Y>
+            <Align>WIDGET_ALIGN_LOW</Align>
+            <Size>32</Size>
+			<Pos>202</Pos>
+        </Y>
+    </Placement>
+</WidgetPanel>

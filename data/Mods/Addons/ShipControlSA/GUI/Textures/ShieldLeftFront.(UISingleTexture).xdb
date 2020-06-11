@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UISingleTexture>
+	<singleTexture href="ShieldLeftFront.(UITexture).xdb#xpointer(/UITexture)" />
+	<permanentCache>0</permanentCache>
+	<sourceFile href="ShieldLeftFront.tga" />
+	<sourceFileCRC>767721680</sourceFileCRC>
+</UISingleTexture>

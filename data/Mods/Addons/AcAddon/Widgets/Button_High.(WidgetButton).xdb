@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+ <Name>Button_High</Name>
+ <Priority>1</Priority>
+ <Variants>
+  <Item>
+   <LayerHighlight href="Button/Highlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+   <ReactionOnUp>true</ReactionOnUp>
+   <Reaction>Left_Click</Reaction>
+   <ReactionRightClick>RightClick</ReactionRightClick>
+  </Item>
+ </Variants>
+ <Visible>false</Visible>
+ <IgnoreDblClick>true</IgnoreDblClick>
+</WidgetButton>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+    <Name>PushNick</Name>
+    	<Priority>8</Priority>
+	<Header>
+		<Prototype href="ButtonRegular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>20</Pos>
+			<HighPos>20</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<Reaction>closecontextmenu</Reaction>
+			<ReactionRightClick>pushnick</ReactionRightClick>
+		</Item>
+	</Variants>
+</WidgetButton>

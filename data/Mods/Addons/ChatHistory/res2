@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>CornerCross</Name>
+	<BackLayer href="GoldenCorner.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Pos>-50</Pos>
+			<Size>37</Size>
+			<HighPos>2</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>-260</Pos>
+			<Size>37</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="res20#xpointer(/WidgetLayerTiledTexture)" />
+			<StateNormal>
+				<LayerMain href="res24#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="res28#xpointer(/WidgetLayerTiledTexture)" />
+			</StatePushed>
+			<Reaction>button_close_history</Reaction>
+			<ReactionOnUp>true</ReactionOnUp>
+		</Item>
+	</Variants>
+	<TransparentInput>false</TransparentInput>
+</WidgetButton>

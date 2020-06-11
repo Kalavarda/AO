@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Sort_ZONE</Name>
+	<Header>
+		<Prototype href="texture/SortButton.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>300</Pos>
+			<Size>140</Size>
+		</X>
+		<Y>
+			<Pos>60</Pos>
+			<Size>20</Size>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<TextFileRef href="ButtonFormatNormal.txt" />
+			<Reaction>Sort_ZONE</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

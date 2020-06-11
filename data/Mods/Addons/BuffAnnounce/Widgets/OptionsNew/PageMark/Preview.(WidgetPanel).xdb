@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Preview</Name>
+	<Priority>200</Priority>
+	<Children>
+		<Item href="PreviewA.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="PreviewB.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="PreviewC.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<BackLayer href="Textures/Preview.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+	<Placement>
+	<X>
+		<Align>WIDGET_ALIGN_HIGH</Align>
+		<HighPos>30</HighPos>
+		<Size>200</Size>
+        </X>
+	<Y>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>70</Pos>
+		<Size>200</Size>
+	</Y>
+	</Placement>
+</WidgetPanel>

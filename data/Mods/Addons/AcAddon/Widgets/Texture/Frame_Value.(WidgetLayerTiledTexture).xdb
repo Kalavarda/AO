@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetLayerTiledTexture>
+ <Color>0xffffffff</Color>
+ <Grayed>false</Grayed>
+ <BlendEffect>BLEND_EFFECT_ALPHABLND</BlendEffect>
+ <flatPlacement>false</flatPlacement>
+ <lazyLoad>false</lazyLoad>
+ <textureItem href="Frame_Value.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+ <Layout>
+  <LeftX>9</LeftX>
+  <MiddleX>14</MiddleX>
+  <RightX>9</RightX>
+  <TopY>9</TopY>
+  <MiddleY>14</MiddleY>
+  <BottomY>9</BottomY>
+ </Layout>
+</WidgetLayerTiledTexture>

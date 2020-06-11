@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+	<Name>ClassPlates</Name>
+	<Priority>5100</Priority>
+	<Children>
+		<Item href="MainPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+		<Item href="DNDPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+		<Item href="ResourceDNDPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+		<Item href="PetDND.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+	</Children>
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>
