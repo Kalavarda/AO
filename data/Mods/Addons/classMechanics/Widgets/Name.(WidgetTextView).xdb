@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>Name</Name>
+	<Priority>6</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>170</Size>
+			<Pos>0</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>35</Size>
+			<Pos>0</Pos>
+		</Y>
+	</Placement>
+	<FormatFileRef href="Name.txt">
+	<TextValues/>
+	<Visible>true</Visible>
+	<TransparentInput>true</TransparentInput>
+	<Enabled>true</Enabled>
+</WidgetTextView>

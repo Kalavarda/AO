@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Priority>5</Priority>
+	<Name>UnitBtn</Name>
+	<Children>
+		<Item href="HealthBar.(WidgetPanel).xdb#xpointer(/WidgetPanel)"/>
+		<Item href="Name.(WidgetTextView).xdb#xpointer(/WidgetTextView)"/>
+	</Children>
+	<BackLayer href="Placeholder.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)"/>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>35</Size>
+			<Pos>0</Pos>
+		</Y>
+	</Placement>
+	<TransparentInput>false</TransparentInput>
+	<Variants>
+		<Item>
+			<Reaction>UnitSelect</Reaction>
+			<ReactionRightClick>RClick</ReactionRightClick>
+		</Item>
+	</Variants>
+	<Visible>false</Visible>
+</WidgetButton>

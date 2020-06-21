@@ -18,8 +18,8 @@
 	<Item href="script/locales.lua"/>
     <Item href="script/mainscript.luac"/>
   </ScriptFileRefs>
-  <author>logg</author>
+  <author>Draculina</author>
   <revision>6</revision>
   <texts href=""/>
   <textures href="wg/res/Icons.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
-<addon_name>SundukTarget</addon_name><addon_date>1592689010</addon_date><addon_link>https://alloder.pro/files/file/436-sunduktarget/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>
+<addon_name>EcuTarget</addon_name>

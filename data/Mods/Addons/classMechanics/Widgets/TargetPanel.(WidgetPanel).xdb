@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>TargetPanel</Name>
+	<Children>
+		<Item href="Text.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="UnitBtn.(WidgetButton).xdb#xpointer(/WidgetButton)"/>
+	</Children>
+	<BackLayer href="Placeholder.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)"/>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Size>170</Size>
+			<HighPos>200</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>30</Size>
+			<Pos>300</Pos>
+		</Y>
+	</Placement>
+</WidgetPanel>
