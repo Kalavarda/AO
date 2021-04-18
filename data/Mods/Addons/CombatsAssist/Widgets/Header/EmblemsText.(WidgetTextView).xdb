@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>EmblemsText</Name>
+	<Priority>3</Priority>
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>45</Pos>
+			<HighPos>0</HighPos>
+			<Size>45</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TabOrder>0</TabOrder>
+	<TransparentInput>true</TransparentInput>
+	<FormatFileRef href="EmblemsTextTemplate.txt" />
+	<TextValues />
+	<TextStyle>
+		<wrapText>false</wrapText>
+		<showClippedSymbol>true</showClippedSymbol>
+		<ellipsis>true</ellipsis>
+		<Align>ALIGNY_MIDDLE</Align>
+	</TextStyle>
+</WidgetTextView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>UnequipOnFast</Name>
+	<Children>
+		<Item href="UnequipOnFastText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Priority>20</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>5</Pos>
+			<HighPos>5</HighPos>
+			<Size>150</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>5</Pos>
+			<Size>30</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<TransparentInput>false</TransparentInput>
+	<Variants>
+		<Item>
+			<PushedOffset x="-2" y="2" />
+			<LayerHighlight href="../../../Textures/GUI/Highlighted.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			<StateNormal>
+				<LayerMain href="../../../Textures/EmptyTexture.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<Reaction>UnequipOnFastPressed</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

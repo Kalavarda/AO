@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>ButtonBuyMenu</Name>
+	<Priority>20</Priority>
+	<clipContent>false</clipContent>
+	<Children>
+		<Item href="ButtonBuyMenuText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>95</Pos>
+			<HighPos>0</HighPos>
+			<Size>140</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>4</Pos>
+			<HighPos>4</HighPos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<PushedOffset x="-2" y="2" />
+			<StateNormal>
+				<LayerMain href="../../../Textures/GUI/MsgBoxButton.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="../../../Textures/GUI/MsgBoxButtonPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StatePushed>
+			<ReactionOnUp>true</ReactionOnUp>
+			<Reaction>ButtonBuyMenuPressed</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

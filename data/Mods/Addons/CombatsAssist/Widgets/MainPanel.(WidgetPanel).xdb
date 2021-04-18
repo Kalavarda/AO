@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>CombatsHelper</Name>
+	<Priority>1</Priority>
+	<clipContent>false</clipContent>
+	<Children>
+		<Item href="Header/Header.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="BuyMenu/BuyMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="SuggestionMenu/SuggestionMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="UnequipMenu/UnequipMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<BackLayer href="../Textures/EmptyTexture.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>500</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIGET_SIZING_DEFAULT</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>532</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetPanel>

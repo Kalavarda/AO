@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>HeaderButton</Name>
+	<Priority>20</Priority>
+	<clipContent>false</clipContent>
+	<Children>
+		<Item href="HeaderText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>40</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<PushedOffset x="-2" y="2" />
+			<StateNormal>
+				<LayerMain href="../../../Textures/Rounded.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+			</StateNormal>
+			<ReactionOnUp>true</ReactionOnUp>
+			<ReactionRightClick>ReactionHeaderButtonPressed</ReactionRightClick>
+		</Item>
+	</Variants>
+</WidgetButton>

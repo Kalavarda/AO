@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <AutoStart>true</AutoStart>
+  <Name>BVFarm</Name>
+  <ScriptFileRefs>
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    <Item href="BVFarm.lua"/>
+  </ScriptFileRefs>
+  <author>Maske</author>
+  <revision>1.0</revision>
+  <update>2015-05-21</update>
+  <www/>
+<addon_name>BVFarm</addon_name><addon_date>1433234260</addon_date><addon_link>https://alloder.pro/files/file/300-bvfarm/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link><localizedNameFileRef href="name.txt"/><localizedDescFileRef href="desc.txt"/></UIAddon>
