@@ -8,6 +8,7 @@ Locales["rus"]={}
 Locales["rus"]["ButtonBuyElixirs"]="Эссенция Грёз"
 Locales["rus"]["ButtonBuyHammers"]="инструменты"
 Locales["rus"]["ButtonBuyGold"]="Золото"
+Locales["rus"]["ButtonBuySymbol"]="Символ Славы"
 Locales["rus"]["ButtonBuyNothing"]="Ничего"
 Locales["rus"]["ButtonSuggestionHighestLoses"]="Высший максимум"
 Locales["rus"]["ButtonSuggestionSmallestGain"]="Выше среднего"
@@ -29,6 +30,7 @@ Locales["eng_eu"]={}
 Locales["eng_eu"]["ButtonBuyElixirs"]="Dream Elixirs"
 Locales["eng_eu"]["ButtonBuyHammers"]="Excellent Tools"
 Locales["eng_eu"]["ButtonBuyGold"]="Gold"
+Locales["eng_eu"]["ButtonBuySymbol"]="Symbol of Glory"
 Locales["eng_eu"]["ButtonBuyNothing"]="Nothing"
 Locales["eng_eu"]["ButtonSuggestionHighestLoses"]="Higher Maximum"
 Locales["eng_eu"]["ButtonSuggestionSmallestGain"]="Higher Average"
@@ -50,6 +52,7 @@ Locales["ger"]={}
 Locales["ger"]["ButtonBuyElixirs"]="Dream Elixirs"
 Locales["ger"]["ButtonBuyHammers"]="Excellent Tools"
 Locales["ger"]["ButtonBuyGold"]="Gold"
+Locales["ger"]["ButtonBuySymbol"]="Symbol of Glory"
 Locales["ger"]["ButtonBuyNothing"]="Nothing"
 Locales["ger"]["ButtonSuggestionHighestLoses"]="Higher Maximum"
 Locales["ger"]["ButtonSuggestionSmallestGain"]="Higher Average"
@@ -71,6 +74,7 @@ Locales["fra"]={}
 Locales["fra"]["ButtonBuyElixirs"]="Dream Elixirs"
 Locales["fra"]["ButtonBuyHammers"]="Excellent Tools"
 Locales["fra"]["ButtonBuyGold"]="Gold"
+Locales["fra"]["ButtonBuySymbol"]="Symbol of Glory"
 Locales["fra"]["ButtonBuyNothing"]="Nothing"
 Locales["fra"]["ButtonSuggestionHighestLoses"]="Higher Maximum"
 Locales["fra"]["ButtonSuggestionSmallestGain"]="Higher Average"
@@ -92,6 +96,7 @@ Locales["tr"]={}
 Locales["tr"]["ButtonBuyElixirs"]="Dream Elixirs"
 Locales["tr"]["ButtonBuyHammers"]="Excellent Tools"
 Locales["tr"]["ButtonBuyGold"]="Gold"
+Locales["tr"]["ButtonBuySymbol"]="Symbol of Glory"
 Locales["tr"]["ButtonBuyNothing"]="Nothing"
 Locales["tr"]["ButtonSuggestionHighestLoses"]="Higher Maximum"
 Locales["tr"]["ButtonSuggestionSmallestGain"]="Higher Average"
@@ -106,3 +111,50 @@ Locales["tr"]["HigherMaximumExplain"]="Team with highest maximum points should l
 Locales["tr"]["HigherAverageExplain"]="Team with higher average points should lose"
 Locales["tr"]["UnequipFastExplain"]="Now you will fast unequip or equip your gear on battle outcome suggestion"
 Locales["tr"]["UnequipSlowExplain"]="Now you will slowly unequip or equip your gear on battle outcome suggestion"
+
+--------------------------------------------------------------------------------
+-- Universal
+--------------------------------------------------------------------------------
+
+-- vendor names
+Locales["nameVendor"] = {
+	["Удар Буйных"] = "Удар Буйных",
+	["Гээл-Бран Хмурый"] = "Гээл-Бран Хмурый",
+	["Gaal-Bran the Gloomy"] = "Gaal-Bran the Gloomy",
+	["Slap the Furious"] = "Slap the Furious",
+	["Gaal-Bran D?stersinn"] = "Gaal-Bran D?stersinn",
+}
+
+-- currency names
+Locales["nameCurrency"] = {
+	["Эмблема Поединка"] = "Эмблема Поединка",
+	["Combat Emblem"] = "Combat Emblem",
+	["Kampfemblem"] = "Kampfemblem",
+}
+
+-- items to buy names
+Locales["nameElixirs"] = {
+	["Эссенция Грёз (100 ед.)"] = "Эссенция Грёз (100 ед.)",
+	["Essence of Dreams (100 pcs.)"] = "Essence of Dreams (100 pcs.)",
+	["100 Fate Elixirs"] = "100 Fate Elixirs",
+	["100 Schicksalselixiere"] = "100 Schicksalselixiere",
+	["Dream Elixir (100 pcs.)"] = "Dream Elixir (100 pcs.)",
+}
+
+Locales["nameTools"] = {
+	["Отличные инструменты"] = "Отличные инструменты",
+	["Excellent Tools"] = "Excellent Tools",
+	["Ausgezeichnete Werkzeuge"] = "Ausgezeichnete Werkzeuge",
+}
+
+Locales["nameGold"] = {
+	["Маленький символ золота"] = "Маленький символ золота",
+	["Small Symbol of Gold"] = "Small Symbol of Gold",
+	["Kleines Symbol des Goldes"] = "Kleines Symbol des Goldes",
+}
+
+Locales["nameSymbol"] = {
+    ["Symbol of Glory"] = "Symbol of Glory",
+    ["Символ Славы"] = "Символ Славы",
+    
+}
