@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<Name>CooldownInfo</Name>
+	<localizedNameFileRef href="name.txt"/>
+	<localizedDescFileRef href="desc.txt"/>
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+		<Item href="Scripts/global.lua"/><Item href="locales.txt"/><Item href="cooldown.txt"/><Item href="Scripts/mainscript.lua"/>
+	</ScriptFileRefs>
+	<MainFormId>Main</MainFormId>
+	<Forms>
+		<Item>
+			<Id>Main</Id>
+			<Form href="Widgets/15c13360#xpointer(/WidgetForm)"/>
+		</Item>
+	</Forms>
+<addon_name>CooldownInfo</addon_name><addon_date>1588509400</addon_date><addon_link>https://alloder.pro/files/file/233-cooldowninfo/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

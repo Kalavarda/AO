@@ -1,0 +1,20 @@
+texts.eng_eu = { -- default
+	['hour'] = 'h',
+	['minute'] = 'm',
+	['second'] = 's',
+	['settings_limit'] = 'Количество умений по горизонтали',
+	['settings_show_all'] = 'Показывать все откаты',
+	['settings_yes'] = 'Yes',
+	['settings_no'] = 'No'
+}
+
+texts.rus = {
+	['hour'] = 'ч',
+	['minute'] = 'м',
+	['second'] = 'с',
+	['settings_limit'] = 'Количество умений по горизонтали',
+	['settings_show_all'] = 'Показывать все откаты',
+	['settings_yes'] = 'Да',
+	['settings_no'] = 'Нет',
+	['settings_size'] = 'Размер'
+}
