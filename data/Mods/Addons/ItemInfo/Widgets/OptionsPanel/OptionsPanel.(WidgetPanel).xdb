@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>OptionsPanel</Name>
+	<Priority>-1</Priority>
+	<Children>
+		<Item href="WindowHeader.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="CornerCross.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		
+		<Item href="OptionsContainer/OptionsContainer.(WidgetScrollableContainer).xdb#xpointer(/WidgetScrollableContainer)" />
+		
+		<Item href="ButtonDefault.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="ButtonOk.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="ButtonCancel.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="ButtonApply.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Children>
+	<BackLayer href="Textures/FrameFromAlchemy.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<FrontLayer href="Textures/frame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>550</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>550</Size>
+		</Y>
+	</Placement>
+	<clipContent>false</clipContent>
+	<Visible>false</Visible>
+	<TrasparentInput>false</TrasparentInput>
+	<PickChildrenOnly>false</PickChildrenOnly>
+	<reactionOnPointing>mouse_over</reactionOnPointing>
+</WidgetPanel>

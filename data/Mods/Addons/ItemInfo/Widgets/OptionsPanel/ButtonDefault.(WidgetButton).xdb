@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>	
+		<Prototype href="ButtonRectangular/ButtonRectangular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Name>ButtonDefault</Name>
+	<Placement>
+		<X>
+			<Pos>8</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>8</HighPos>
+		</Y>
+	</Placement>
+	<!--<Variants>
+		<Item>
+			<TextFileRef href="Texts/ButtonDefault.txt" />
+		</Item>
+	</Variants>-->
+</WidgetButton>

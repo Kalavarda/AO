@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>ListTooltipPanel</Name>
+	<Priority>-5</Priority>
+	<BackLayer href="textures/ContentFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Pos>0</Pos>
+			<HighPos>30</HighPos>
+			<Size>150</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>4</Pos>
+			<HighPos>4</HighPos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<reactionOnPointing>list_over</reactionOnPointing>
+</WidgetPanel>

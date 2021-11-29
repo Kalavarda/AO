@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetLayerSimpleTexture>
+	<Color>0x70ffffff</Color>
+	<Grayed>false</Grayed>
+	<BlendEffect>BLEND_EFFECT_ADD</BlendEffect>
+	<flatPlacement>false</flatPlacement>
+	<lazyLoad>false</lazyLoad>
+	<Scaling>true</Scaling>
+</WidgetLayerSimpleTexture>

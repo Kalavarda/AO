@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>CheckboxPanel</Name>
+	<BackLayer href="../Textures/OptionFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Children>
+		<Item href="Description.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Checkbox.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>	
+			<Pos>0</Pos>
+			<Size>32</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+</WidgetPanel>

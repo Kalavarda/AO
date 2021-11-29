@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<BackLayer href="SliderTiledFrame.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<Pos>0</Pos>
+			<HighPos>45</HighPos>
+			<Size>195</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>19</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

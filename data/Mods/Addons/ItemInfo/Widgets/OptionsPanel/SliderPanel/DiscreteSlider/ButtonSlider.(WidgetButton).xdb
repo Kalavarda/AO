@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>30</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>22</Size>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<LayerHighlight href="ScrollSliderBtnHighlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			<StateNormal>
+				<LayerMain href="ScrollSliderBtnNormal.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="ScrollSliderBtnPressed.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StatePushed>
+			<StateDisabled>
+				<LayerMain href="ScrollSliderBtnDisabled.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+</WidgetButton>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+	<Name>ItemInfo</Name>
+	<Priority>12000</Priority>
+	<Children>
+		<Item href="ItemTimeInfo/ItemTimeInfoText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="ItemTimeInfo/AnnounceText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+
+		<Item href="OptionsButton/OptionsButton.(WidgetButton).xdb#xpointer(/WidgetPanel)" />
+
+		<Item href="OptionsPanel/OptionsPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+
+		<Item href="OptionsPanel/GroupPanel/GroupPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="OptionsPanel/CheckboxPanel/CheckboxPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="OptionsPanel/SliderPanel/SliderPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />	
+		<Item href="OptionsPanel/ListPanel/ListPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />		
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<!--<TransparentInput>false</TransparentInput>-->
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>

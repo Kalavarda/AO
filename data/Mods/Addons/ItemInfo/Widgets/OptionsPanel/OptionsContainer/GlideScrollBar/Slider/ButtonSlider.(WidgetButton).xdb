@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>24</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>64</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<StateNormal>
+				<LayerMain href="sbSlider.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<StateDisabled>
+				<LayerMain href="" />
+			</StateDisabled>
+		</Item>
+	</Variants>
+</WidgetButton>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>ListPanelButtonLeft</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>180</HighPos>
+			<Size>28</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Size>28</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<reactionOnPointing>list_leftbutton_over</reactionOnPointing>
+	<Variants>
+		<Item>
+			<LayerHighlight href="textures/PinBtnHighlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			<StateNormal>
+				<LayerMain href="textures/PinBtnLeftNormal.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<StatePushed>
+				<LayerMain href="textures/PinBtnLeftPressed.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StatePushed>
+			<StateDisabled>
+				<LayerMain href="textures/PinBtnLeftDisabled.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateDisabled>
+			<Reaction>list_leftbutton_pressed</Reaction>
+		</Item>
+	</Variants>
+</WidgetButton>

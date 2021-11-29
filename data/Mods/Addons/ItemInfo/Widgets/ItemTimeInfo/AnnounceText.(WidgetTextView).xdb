@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>AnnounceText</Name>
+	<Priority>3</Priority>
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>1080</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>300</Pos>
+			<HighPos>0</HighPos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<Enabled>true</Enabled>
+	<TabOrder>0</TabOrder>
+	<TransparentInput>true</TransparentInput>
+	<FormatFileRef href="AnnounceTextTemplate.txt" />
+	<TextValues />
+	<TextStyle>
+		<wrapText>false</wrapText>
+		<showClippedSymbol>true</showClippedSymbol>
+		<ellipsis>true</ellipsis>
+		<Align>ALIGNY_MIDDLE</Align>
+	</TextStyle>
+</WidgetTextView>

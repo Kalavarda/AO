@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>	
+		<Prototype href="ButtonRectangular/ButtonRectangular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Name>ButtonCancel</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>112</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>8</HighPos>
+		</Y>
+	</Placement>
+	<!--<Variants>
+		<Item>
+			<TextFileRef href="Texts/ButtonCancel.txt" />
+		</Item>
+	</Variants>-->
+</WidgetButton>

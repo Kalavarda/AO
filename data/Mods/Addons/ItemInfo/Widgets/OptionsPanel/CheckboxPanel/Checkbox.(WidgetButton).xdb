@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>
+		<Prototype href="CheckboxSquare/CheckboxSquare.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Name>Checkbox</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>4</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+		</Y>
+	</Placement>
+</WidgetButton>

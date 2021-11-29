@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Children>
+		<Item href="HeaderText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<sizingWidget href="" />
+		<sizingWidgets>
+			<Item href="HeaderText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		</sizingWidgets>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_CHILDREN</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>0</Size>
+		</X>
+		<Y>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>3</Pos>
+			<Size>40</Size>
+		</Y>
+	</Placement>
+	<TransparentInput>false</TransparentInput>
+</WidgetPanel>

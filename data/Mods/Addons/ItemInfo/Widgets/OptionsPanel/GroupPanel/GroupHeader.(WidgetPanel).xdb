@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>GroupHeader</Name>
+	<Children>
+		<Item href="GroupHeaderText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<BackLayer href="../Textures/GroupLabel.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<sizingWidget href="GroupHeaderText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_CHILDREN</Sizing>
+			<Pos>20</Pos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<!--<Sizing>WIDGET_SIZING_CHILDREN</Sizing>-->
+			<Pos>0</Pos>
+			<Size>24</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>	
+		<Prototype href="ButtonRectangular/ButtonRectangular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Name>ButtonApply</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>8</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>8</HighPos>
+		</Y>
+	</Placement>
+	<!--<Variants>
+		<Item>
+			<TextFileRef href="Texts/ButtonApply.txt" />
+		</Item>
+	</Variants>-->
+</WidgetButton>

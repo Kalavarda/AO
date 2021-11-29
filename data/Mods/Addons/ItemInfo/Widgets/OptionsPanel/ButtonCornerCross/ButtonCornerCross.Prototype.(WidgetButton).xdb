@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>8</HighPos>
+			<Size>26</Size>
+		</X>
+		<Y>
+			<Size>26</Size>
+			<Pos>8</Pos>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<LayerHighlight href="BtnCrossHighlighted.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			<StateNormal>
+				<LayerMain href="BtnCrossNormal.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<Reaction>cross_click</Reaction>
+			<ReactionOnUp>false</ReactionOnUp>
+		</Item>
+	</Variants>
+</WidgetButton>

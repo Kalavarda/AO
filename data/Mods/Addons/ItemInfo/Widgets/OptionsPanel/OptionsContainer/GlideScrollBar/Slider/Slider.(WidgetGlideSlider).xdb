@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetGlideSlider>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>24</Size>			
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>26</Pos>
+			<HighPos>26</HighPos>
+		</Y>
+	</Placement>
+	<PickChildrenOnly>false</PickChildrenOnly>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<sliderButton href="ButtonSlider.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	<moveArrangement>WIDGETS_ARRANGEMENT_T2B</moveArrangement>
+	<discreteStep>32</discreteStep>
+</WidgetGlideSlider>

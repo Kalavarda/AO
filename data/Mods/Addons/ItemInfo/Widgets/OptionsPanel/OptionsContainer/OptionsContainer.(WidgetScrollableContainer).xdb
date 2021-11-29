@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetScrollableContainer>
+	<Name>OptionsContainer</Name>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>8</Pos>
+			<HighPos>8</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>48</Pos>
+			<HighPos>48</HighPos>
+		</Y>
+	</Placement>
+	<PickChildrenOnly>true</PickChildrenOnly>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<border href="OptionsContent.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	<widgetsArrangement>WIDGETS_ARRANGEMENT_T2B</widgetsArrangement>
+	<scrollBar href="GlideScrollBar.(WidgetGlideScrollBar).xdb#xpointer(/WidgetGlideScrollBar)" />
+</WidgetScrollableContainer>
