@@ -151,6 +151,35 @@ function On_EVENT_INTERACTION_STARTED(params)
 	if params and avatar.IsTalking() then
 	
 		local retQuestList = avatar.GetReturnableQuests()
+		if avatar.HasInteractorCue() then
+			local cue = avatar.GetInteractorCue()
+			if cue then
+				local nextCues = avatar.GetInteractorNextCues()
+				if nextCues[0] then
+					--Chat("nextCues[0]")
+					-- local answer0 = nextCues[0].text
+					-- Chat(answer0)
+				end
+				if nextCues[1] then
+					-- Chat(userMods.FromWString(nextCues[1].text))
+					-- local answer0 = nextCues[0].text
+					-- Chat(answer0)
+				else
+					--Chat(userMods.FromWString(cue.text))
+					if cue.isSpecial then
+						-- Chat("isSpecial == true")
+					end
+					if cue.data then
+						local q = cue.data[0]
+						if q then
+							-- Chat("cue.data[0]")
+						end
+					end
+					avatar.SelectInteractorCue(0)
+				end
+			end
+		end
+		
 		if retQuestList then
 			for i, id in pairs(retQuestList) do
 				local sysName = GetQuestName(id)

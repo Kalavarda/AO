@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+  <Name>LabsInfo</Name>
+  <localizedNameFileRef href="name.txt"/>
+  <localizedDescFileRef href="desc.txt"/>
+
+  <AutoStart>true</AutoStart>
+  <addonGroups/>
+
+  <Forms>
+    <Item>
+      <Form href="Widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+      <Id>MainForm</Id>
+    </Item>
+  </Forms>
+  <MainFormId>MainForm</MainFormId>
+
+  <ScriptFileRefs>
+    <Item href="Libs/LibDnD.lua"/>
+    <Item href="Libs/AOClassLibrary.lua"/>
+    <Item href="Libs/Chat.lua"/>
+    
+    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    
+    <Item href="Scripts/LabsInfo.luac"/>
+  </ScriptFileRefs>
+
+  <visObjects href=""/>
+  <aliasVisObjects href=""/>
+
+  <texts href=""/>
+  <textsGroups/>
+  <textures href=""/>
+  <texturesGroups/>
+
+  <sounds href=""/>
+  <soundsGroups/>
+  <decalObjects href=""/>
+
+  <author/>
+  <revision>1</revision>
+  <update>2018-10-11 21:02:21</update>
+  <www>http://alloder.pro/forum/-</www>
+<addon_name>LabsInfo</addon_name><addon_date>1636011169</addon_date><addon_link>https://alloder.pro/files/file/682-labsinfo/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

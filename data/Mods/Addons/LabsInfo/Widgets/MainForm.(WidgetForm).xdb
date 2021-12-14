@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+  <Name>LabsInfo</Name>
+  <Priority>7000</Priority>
+  <Children>
+    <Item href="MainBtn/MainBtn.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+    <Item href="PanelInfo/PanelInfo.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="PanelText/Announce.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+  </Children>
+  <BackLayer href="" />
+  <FrontLayer href="" />
+  <Placement>
+    <QuantumScale>false</QuantumScale>
+    <X>
+      <Align>WIDGET_ALIGN_BOTH</Align>
+    </X>
+    <Y>
+      <Align>WIDGET_ALIGN_BOTH</Align>
+    </Y>
+  </Placement>
+  
+  <bindSections>
+    <Item>
+      <bindSection>common</bindSection>
+      <bindedReactions>
+        <Item>acceptMerc_tools</Item>
+      </bindedReactions>
+    </Item>
+  </bindSections>
+  
+  <Visible>true</Visible>
+  <Enabled>true</Enabled>
+  <TransparentInput>false</TransparentInput>
+  <PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>
