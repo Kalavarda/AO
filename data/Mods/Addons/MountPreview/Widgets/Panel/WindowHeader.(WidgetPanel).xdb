@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Header</Name>
+	<Children>
+		<Item href="Header.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>60</Pos>
+			<HighPos>60</HighPos>
+		</X>
+		<Y>	
+			<Pos>8</Pos>
+			<Size>44</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

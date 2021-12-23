@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetLayerTiledTexture>
+	<textureItem href="/Interface/Ingame/AlchemyV2/Textures/RecipeList/View/ViewBack.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+	<Layout>
+		<LeftX>0</LeftX>
+		<MiddleX>550</MiddleX>
+		<RightX>0</RightX>
+		<TopY>0</TopY>
+		<MiddleY>550</MiddleY>
+		<BottomY>0</BottomY>
+	</Layout>
+</WidgetLayerTiledTexture>

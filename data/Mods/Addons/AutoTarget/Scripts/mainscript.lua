@@ -257,7 +257,6 @@ function GetPlayerIds()
 		local units = avatar.GetUnitList()
 		for key, unitId in pairs(units) do
 			local coord = object.GetPos(unitId)
-			Chat('T-1')
 			if coord and IsNear(avatarPos, coord) then
 				if GameMode == MODE_PVE then
 					PlayerIds[key] = unitId
@@ -330,6 +329,7 @@ function GetTargetId(ids)
 	
 	if AvatarAspect == ASPECT_ATTACK then
 		for key, playerId in pairs(ids) do
+			return playerId
 		end
 	end
 	
@@ -384,6 +384,7 @@ function Init()
 	common.RegisterReactionHandler( ButtonClick, "RIGHT_CLICK" )
 	ShowMode()
 
+	common.RegisterReactionHandler(SetAutoTarget, "mouse_left_click" )
 	--common.RegisterEventHandler(onObjectBuffsChanged, "EVENT_EMOTES_CHANGED" )
 	--common.RegisterEventHandler(SetAutoTarget, "EVENT_SECOND_TIMER")
 end

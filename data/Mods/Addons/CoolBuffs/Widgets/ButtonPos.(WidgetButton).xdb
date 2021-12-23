@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Header>
+		<Prototype href="ButtonRegular2/ButtonRegular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Name>ButtonPos</Name>
+	<Placement>
+		<X>
+			<Pos>33</Pos>
+			<Size>220</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_HIGH</Align>
+			<HighPos>41</HighPos>
+		</Y>
+	</Placement>
+	<Variants>
+		<Item>
+			<TextFileRef href="ButtonPos.txt" />
+			<Reaction>button_pos_pressed</Reaction>
+			<ReactionOnPointing />
+		</Item>
+	</Variants>
+</WidgetButton>

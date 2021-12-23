@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetControl3D>
+	<Name>Control</Name>
+	<BackLayer href="Textures/bg.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Pos>3</Pos>
+			<Size>545</Size>
+		</X>
+		<Y>
+			<Pos>0</Pos>
+			<Size>500</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TabOrder>0</TabOrder>
+	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>false</PickChildrenOnly>
+	<IgnoreDblClick>false</IgnoreDblClick>
+	<fade>0.01</fade>
+	<sceneClearColor>false</sceneClearColor>
+</WidgetControl3D>

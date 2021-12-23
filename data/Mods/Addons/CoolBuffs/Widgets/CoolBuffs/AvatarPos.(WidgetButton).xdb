@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>AvatarPos</Name>
+	<Priority>100</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>-165</Pos>
+			<Size>132</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>-50</Pos>
+			<Size>132</Size>
+		</Y>
+	</Placement>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Variants>
+		<Item>
+			<TextFileRef href="" />
+			<StateNormal>
+				<LayerMain href="Textures/LeftButton.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<ReactionRightClick>OnPosClick</ReactionRightClick>
+		</Item>
+		<Item>
+			<TextFileRef href="" />
+			<StateNormal>
+				<LayerMain href="Textures/RightButton.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<ReactionRightClick>OnPosClick</ReactionRightClick>
+		</Item>
+	</Variants>
+</WidgetButton>

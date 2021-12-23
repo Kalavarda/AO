@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>Control3DPanel</Name>
+	<Children>
+		<Item href="Control3D.(WidgetControl3D).xdb#xpointer(/WidgetControl3D)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>3</Pos>
+			<Size>545</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>50</Pos>
+			<Size>500</Size>
+		</Y>
+	</Placement>
+	<TransparentInput>false</TransparentInput>
+</WidgetPanel>

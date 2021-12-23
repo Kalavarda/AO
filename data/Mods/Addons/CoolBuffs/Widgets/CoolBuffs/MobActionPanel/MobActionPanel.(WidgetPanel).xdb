@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>MobActionPanel</Name>
+	<Priority>100</Priority>
+	<BackLayer href="Textures/Simple.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+	<Children>
+		<Item href="Cast.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Icon.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Button.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="Name.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+		<Item href="Spell.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>0</Pos>
+			<Size>320</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>40</Pos>
+			<Size>40</Size>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetPanel>

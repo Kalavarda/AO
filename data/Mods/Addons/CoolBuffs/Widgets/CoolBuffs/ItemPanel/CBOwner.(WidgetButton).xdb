@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Name>CBOwner</Name>
+  <Priority>4</Priority>
+  <Header>
+    <Prototype href="CheckBoxStone/CheckBoxStone.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  </Header>
+  <Placement>
+    <X>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>521</Pos>
+    </X>
+    <Y>
+		<Align>WIDGET_ALIGN_LOW</Align>
+		<Pos>40</Pos>
+    </Y>
+  </Placement>
+</WidgetButton>
