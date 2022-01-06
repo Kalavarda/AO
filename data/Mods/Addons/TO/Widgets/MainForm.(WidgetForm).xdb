@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <WidgetForm>
-	<Name>AutoTarget</Name>
+	<Name>TO</Name>
 	<Priority>5000</Priority>
 	<Children>
 		<Item href="PanelTarget.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
