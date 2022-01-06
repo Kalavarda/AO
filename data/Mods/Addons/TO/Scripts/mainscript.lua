@@ -79,7 +79,6 @@ function Init()
 	else
 		AvatarGuildId = nil
 	end
-	Chat(AvatarGuildId)
 
 	common.RegisterEventHandler(OnUnitsChanged, "EVENT_UNITS_CHANGED")
 	common.RegisterEventHandler(OnAvatarTargetChanged, "EVENT_AVATAR_TARGET_CHANGED")

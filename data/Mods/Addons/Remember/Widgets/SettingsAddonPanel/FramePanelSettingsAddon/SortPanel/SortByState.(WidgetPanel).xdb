@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>SortByState</Name>
+  <Header>
+    <Prototype href="../../ButtonsPrototypes/ButtonSort/ButtonSort.Prototype.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  </Header>
+  <Placement>
+    <X>
+      <Size>32</Size>
+    </X>
+  </Placement>
+</WidgetPanel>

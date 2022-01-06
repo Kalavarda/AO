@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+  <mipsNumber>1</mipsNumber>
+  <type>DXT1</type>
+  <width>512</width>
+  <height>64</height>
+  <realWidth>309</realWidth>
+  <realHeight>52</realHeight>
+  <disableLODControl>false</disableLODControl>
+  <alphaTex>true</alphaTex>
+  <binaryFileSize>406</binaryFileSize>
+  <binaryFile href="ItemHighlight.(UITexture).bin" />
+</UITexture>

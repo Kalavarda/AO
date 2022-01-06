@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Name>CloseBtnMainPanelSettingsAddon</Name>
+  <Header>
+    <Prototype href="../../ButtonsPrototypes/CloseBtn/ButtonCornerCross.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  </Header>
+  <Placement>
+    <X>
+      <Align>WIDGET_ALIGN_HIGH</Align>
+      <HighPos>3</HighPos>
+      <Size>37</Size>
+    </X>
+    <Y>
+      <Pos>3</Pos>
+      <Size>37</Size>
+    </Y>
+  </Placement>
+  <Variants>
+    <Item>
+      <!--<TextFileRef href="DefaultValue.txt" />-->
+      <Reaction>mouse_left_click</Reaction>
+      <ReactionOnUp>true</ReactionOnUp>
+    </Item>
+  </Variants>
+</WidgetButton>

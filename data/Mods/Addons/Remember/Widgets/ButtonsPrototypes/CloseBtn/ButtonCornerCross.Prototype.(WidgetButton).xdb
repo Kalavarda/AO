@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Header>
+    <isPrototype>true</isPrototype>
+  </Header>
+  <Priority>256</Priority>
+
+  <BackLayer href="GoldenCorner.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+  <Placement>
+    <X>
+      <Size>37</Size>
+    </X>
+    <Y>
+      <Size>37</Size>
+    </Y>
+  </Placement>
+  <IgnoreDblClick>true</IgnoreDblClick>
+  <Variants>
+    <Item>
+      <LayerHighlight href="CornerCrossHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      <StateNormal>
+        <LayerMain href="CornerCrossNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StateNormal>
+      <StatePushed>
+        <LayerMain href="CornerCrossPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StatePushed>
+      <ReactionOnUp>true</ReactionOnUp>
+      <Reaction>mouse_left_click</Reaction>
+    </Item>
+  </Variants>
+</WidgetButton>

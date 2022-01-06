@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+  <Name>HeaderTextPanelSettingsAddon</Name>
+  <Priority>16</Priority>
+  <BackLayer href="Texture/Header.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+  <Placement>
+    <X>
+      <Align>WIDGET_ALIGN_CENTER</Align>
+      <Size>240</Size>
+    </X>
+    <Y>  
+      <Pos>0</Pos>
+      <Size>44</Size>
+    </Y>
+  </Placement>
+  <FormatFileRef href="DefaultValue.txt" />
+  <TransparentInput>false</TransparentInput>
+</WidgetTextView>

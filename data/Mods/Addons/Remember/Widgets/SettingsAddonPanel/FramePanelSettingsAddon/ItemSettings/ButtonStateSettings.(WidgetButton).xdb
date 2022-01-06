@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Name>ButtonStateSettings</Name>
+  <Header>
+    <Prototype href="../../../ButtonsPrototypes/CheckBoxStone/CheckBoxStone.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  </Header>
+  <Placement>
+    <X>
+      <Pos>3</Pos>
+    </X>
+    <Y>
+      <Align>WIDGET_ALIGN_CENTER</Align>
+    </Y>
+  </Placement>
+</WidgetButton>

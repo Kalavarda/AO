@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIRelatedTexts>
+	<items>
+		<Item>
+			<name>MountName</name>
+			<resource href="MountName.txt" />
+		</Item>
+		<Item>
+			<name>PetName</name>
+			<resource href="PetName.txt" />
+		</Item>
+	</items>
+</UIRelatedTexts>

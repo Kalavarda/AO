@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+  <mipSW>-1</mipSW>
+  <mipsNumber>1</mipsNumber>
+  <generateMipChain>false</generateMipChain>
+  <type>DXT5</type>
+  <width>512</width>
+  <height>512</height>
+  <realWidth>386</realWidth>
+  <realHeight>325</realHeight>
+  <disableLODControl>false</disableLODControl>
+  <alphaTex>true</alphaTex>
+  <binaryFileSize>17641</binaryFileSize>
+  <binaryFile href="MainPanel.(UITexture).bin" />
+  <wrap>false</wrap>
+</UITexture>
