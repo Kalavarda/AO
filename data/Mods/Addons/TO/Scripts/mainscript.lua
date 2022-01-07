@@ -15,6 +15,8 @@ local SavedControlName
 local PlayerIds = {}
 local AvatarGuildId = 0
 local GuildIds = {}
+local GreenColor = { a = 1, r = 0, g = 1, b = 0 }
+local RedColor = { a = 1, r = 1, g = 0, b = 0 }
 
 function ButtonClick(params)
 	if DnD:IsDragging() then return	end
@@ -23,21 +25,18 @@ function ButtonClick(params)
 	end
 end
 
-function IsNear(coord1, coord2)
-	local dx = coord1.posX - coord2.posX
-	local dy = coord1.posY - coord2.posY
-	local dz = coord1.posZ - coord2.posZ
-	if math.sqrt(dx*dx + dy*dy + dz*dz) < 40 then
-		return true
-	end
-	return false
-end
-
 function OnUnitsChanged(params)
 	for _, id in pairs(params.spawned) do
-		if unit.IsPlayer(id) and unit.CanSelectTarget(id) then
-			if not PlayerIds[id] then
-				local name = object.GetName(id)
+		StoreUnitName(id)
+	end
+end
+
+function StoreUnitName(id)
+	if unit.IsPlayer(id) and unit.CanSelectTarget(id) then
+		if not PlayerIds[id] then
+			local name = object.GetName(id)
+			local n = userMods.FromWString(name)
+			if n ~= 'Кладоискатель' then
 				if name then
 					PlayerIds[id] = name
 					--Chat(userMods.FromWString(name))
@@ -59,15 +58,28 @@ function OnAvatarTargetChanged()
 		if name then
 			local guildId = GuildIds[targetId]
 			if guildId == AvatarGuildId then
-				ButtonTarget:SetTextColor(nil, { a = 1, r = 0, g = 1, b = 0 })
+				ButtonTarget:SetTextColor(nil, GreenColor)
 			else
-				ButtonTarget:SetTextColor(nil, { a = 1, r = 1, g = 0, b = 0 })
+				ButtonTarget:SetTextColor(nil, RedColor)
 			end
 			ButtonTarget:SetVal("button_label", name)
+		else
+			ButtonTarget:SetVal("button_label", userMods.ToWString(''))
 		end
 	else
 		ButtonTarget:SetVal("button_label", userMods.ToWString(''))
 	end	
+end
+
+
+function ButtonClick(params)
+	if DnD:IsDragging() then return	end
+
+	local units = avatar.GetUnitList()
+	for key, unitId in pairs(units) do
+		StoreUnitName(unitId)
+	end
+
 end
 
 function Init()
@@ -80,6 +92,7 @@ function Init()
 		AvatarGuildId = nil
 	end
 
+	common.RegisterReactionHandler( ButtonClick, "LEFT_CLICK" )
 	common.RegisterEventHandler(OnUnitsChanged, "EVENT_UNITS_CHANGED")
 	common.RegisterEventHandler(OnAvatarTargetChanged, "EVENT_AVATAR_TARGET_CHANGED")
 end
