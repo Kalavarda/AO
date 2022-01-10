@@ -29,7 +29,7 @@ function PsiPlate()
 end
 
 function WarPlate()
-	Plate = stateMainForm:GetChildUnchecked( "AdvantageBar", true ):GetParent():GetParent()
+	Plate = stateMainForm:GetChildUnchecked( "ClassAddonWarrior", false )
 end
 
 function MagPlate()

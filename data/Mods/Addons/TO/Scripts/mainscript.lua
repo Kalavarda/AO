@@ -39,7 +39,7 @@ function StoreUnitName(id)
 			if n ~= 'Кладоискатель' then
 				if name then
 					PlayerIds[id] = name
-					--Chat(userMods.FromWString(name))
+					--Chat(n)
 				end
 				local guild = unit.GetGuildInfo(id)
 				if guild and guild.guildId then
@@ -79,7 +79,7 @@ function ButtonClick(params)
 	for key, unitId in pairs(units) do
 		StoreUnitName(unitId)
 	end
-
+	Chat('Ники запомнены')
 end
 
 function Init()
