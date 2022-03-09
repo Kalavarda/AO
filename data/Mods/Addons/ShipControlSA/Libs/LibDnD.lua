@@ -62,7 +62,8 @@ function DnD.Init( wtMovable, wtReacting, fUseCfg, fLockedToParentArea, Padding,
 	if not mt._Show then
 		mt._Show = mt.Show
 		mt.Show = function ( self, show )
-			self:_Show( show ); DnD.Register( self, show )
+			self:_Show( show ); 
+			if self:IsValid() then DnD.Register( self, show ) end
 		end
 	end
 	DnD.Register( wtReacting, true )

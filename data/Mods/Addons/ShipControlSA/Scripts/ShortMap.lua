@@ -16,6 +16,7 @@ local clrGreen = {r = 0; g = 1; b = 0; a = 1}
 local iconSize = 30
 
 local ShipPlatePlaceX, ShipPlatePlaceY
+local NowObserveringID = nil
 
 ---------------------------------------------------------------
 local addon_name, toWString, container = common.GetAddonName(), userMods.ToWString
@@ -359,38 +360,40 @@ local function show_Ship( uInfo )
 		uInfo.wShld[side]:Rotate( set + angle )
 	end
 
-	if dist > 2 then --- наш корабль тут не показывать?
-		local rr
-		if IsRadarMode() then
-			rr = calcRadius( dist )
-			wtSetPlace( w, { posX = rr * relatX, posY = rr * relatY, sizeX = iconSize*uInfo.size, sizeY = iconSize*uInfo.size } )
-			uInfo.wHP_sizeX = iconSize*uInfo.size
+	local rr
+	if IsRadarMode() then
+		rr = calcRadius( dist )
+		wtSetPlace( w, { posX = rr * relatX, posY = rr * relatY, sizeX = iconSize*uInfo.size, sizeY = iconSize*uInfo.size } )
+		uInfo.wHP_sizeX = iconSize*uInfo.size
 
-		else
-			local X, Y = sm_Pos( relatX, relatY, uInfo.dRad )
-			local size = dist<1000 and (1000+500)/(dist+500) or 1
-			wtSetPlace( w, { posX = X, posY = Y, sizeX = size * iconSize *uInfo.size, sizeY = size * iconSize*uInfo.size } )
-			uInfo.wHP_sizeX = size * iconSize*uInfo.size
+	else
+		local X, Y = sm_Pos( relatX, relatY, uInfo.dRad )
+		local size = dist<1000 and (1000+500)/(dist+500) or 1
+		wtSetPlace( w, { posX = X, posY = Y, sizeX = size * iconSize *uInfo.size, sizeY = size * iconSize*uInfo.size } )
+		uInfo.wHP_sizeX = size * iconSize*uInfo.size
 
-		end
-		local wTxt = uInfo.wTxtDist
-		if wTxt then
-			local dNum = getDistNum(dist)
-			if not uInfo.distNum or uInfo.distNum ~= dNum then
-				if dist < 2000 then 
-					wTxt:SetVal("value", ToWS(""..dNum))
-					wTxt:Show(true)
-					uInfo.distNum = dNum
-				else
-					wTxt:Show(false)
-				end
+	end
+	local wTxt = uInfo.wTxtDist
+	if wTxt then
+		local dNum = getDistNum(dist)
+		if not uInfo.distNum or uInfo.distNum ~= dNum then
+			if dist < 2000 then 
+				wTxt:SetVal("value", ToWS(""..dNum))
+				wTxt:Show(true)
+				uInfo.distNum = dNum
+			else
+				wTxt:Show(false)
 			end
 		end
-		--wtSetPlace( w, { posX = rr * relatX, posY = rr * relatY} )
-		w:Rotate( angle )
-		show_deltaZ( uInfo )
+	end
+	--wtSetPlace( w, { posX = rr * relatX, posY = rr * relatY} )
+	w:Rotate( angle )
+	show_deltaZ( uInfo )
+	
+	if get_PS("TogetherMode") and uInfo.id == getMyShipID() then 
+		w:Show(false)
 	else
-		--del_Obj( uInfo.id )
+		w:Show(true)
 	end
 end
 
@@ -501,6 +504,10 @@ local function add_Obj(id)
 	w:SetPriority( priorMob + 50)
 	if uInfo.image then w:SetBackgroundTexture( uInfo.image ) end
 	uInfo.wt = w
+	
+	uInfo.wSelection = WCD( dsc.PanelER, id.."_hl", w, { sizeX = iconSize*uInfo.size/2, sizeY = iconSize*uInfo.size/2, alignX=1, alignY=0}, false )
+	uInfo.wSelection:SetBackgroundTexture( common.GetAddonRelatedTexture("OrkAura01Glow") )
+	uInfo.wSelection:SetPriority(1)
 
 	local wTxt = WCD( dsc.Text, nil, w, { alignX = 3, alignY=3, sizeY=20 }, true )
 	wTxt:SetEllipsis( false )
@@ -563,6 +570,10 @@ local function add_Hidden( uInfo )
 	end
 	uInfo.wt = w
 
+	uInfo.wSelection = WCD( dsc.PanelER, uInfo.id.."_hl", w, { sizeX = iconSize*uInfo.size/2, sizeY = iconSize*uInfo.size/2, alignX=1, alignY=0}, false )
+	uInfo.wSelection:SetBackgroundTexture( common.GetAddonRelatedTexture("OrkAura01Glow") )
+	uInfo.wSelection:SetPriority(1)
+	
 	local wTxt = WCD( dsc.Text, nil, w, { alignX = 3, alignY=3, sizeY=20 }, true )
 	wTxt:SetEllipsis( false )
 	uInfo.w_dZTxt = wTxt
@@ -573,17 +584,6 @@ local function add_Hidden( uInfo )
 
 end
 
-function SetImageMyShip( id, uInfoIn )
-	local uInfo = uInfoIn or uts[id]
-	if not uInfo then return end
-	local w = uInfo.wt
-	local wtRP = Get_RadarPlate()
-	wtRP:AddChild( w )
-	uInfo.size = 5/3
-	wtSetPlace( w, { sizeX = iconSize*uInfo.size, sizeY = iconSize*uInfo.size } )
-	w:SetBackgroundColor( { r = 0.1, g=0.5, b=0.2, a=1 } )
-end
-
 function add_Ship(id)
 	if uts[id] then
 		--- оказывается когда падаешь с корабля ID объектов не изменяются но при появлении после смерти на корабле
@@ -591,9 +591,6 @@ function add_Ship(id)
 		return
 	end
 ---------------------------------------------------------------------
-	if get_PS("TogetherMode") and id == getMyShipID() then 
-		return
-	end
 
 	if id ~= getMyShipID() then 
 
@@ -625,6 +622,10 @@ function add_Ship(id)
 	uts[id] = uInfo
 
 
+	uInfo.wSelection = WCD( dsc.PanelER, id.."_hl", w, { sizeX = sizeX/2, sizeY = sizeX/2, alignX=1, alignY=0}, false )
+	uInfo.wSelection:SetBackgroundTexture( common.GetAddonRelatedTexture("OrkAura01Glow") )
+	uInfo.wSelection:SetPriority(1)
+	
 	local clr, clrHPbar = getRelationColor( uInfo )
 	local wbar = WCD( dsc.BarHP, nil, w, { alignX = 3, alignY=0, sizeY=8 }, true )
 	wbar:SetBackgroundColor( {r=clrHPbar.r-0.6; g=clrHPbar.g-0.6; b=clrHPbar.b-0.6, a=1 } )
@@ -683,9 +684,11 @@ function add_Ship(id)
 		end
 	end]]
 
-	w:Show( true )
-	if id == getMyShipID() then
-		SetImageMyShip( id, uInfo )
+	
+	if get_PS("TogetherMode") and uInfo.id == getMyShipID() then 
+		w:Show( false )
+	else
+		w:Show( true )
 	end
 end
 
@@ -711,6 +714,10 @@ local function add_Unit(id)
 	w:SetPriority( priorMob )
 	uInfo.wt = w
 
+	uInfo.wSelection = WCD( dsc.PanelER, id.."_hl", w, { sizeX = sizeX/2, sizeY = sizeX/2, alignX=1, alignY=0}, false )
+	uInfo.wSelection:SetBackgroundTexture( common.GetAddonRelatedTexture("OrkAura01Glow") )
+	uInfo.wSelection:SetPriority(1)
+	
 	local wbar = WCD( dsc.BarHP, nil, w, { alignX = 3, alignY=0, sizeY=8 }, true )
 	wbar:SetBackgroundColor( {r=.2; g=0.0; b=0, a=1 } )
 	uInfo.wHP = W("dscBar", wbar )
@@ -746,6 +753,28 @@ function repaintPos( uInfo, trPos1)
 			if info then repaintPos( info, trPos ) end
 		end
 		repaintScale()
+	end
+end
+
+function targetChanged()
+	if not PS.HighlightTarget then
+		return
+	end
+	local targetID = avatar.GetObservedTransport() or avatar.GetObservedAstralUnit()
+	if targetID then
+		if uts[targetID] then 
+			if NowObserveringID and uts[NowObserveringID] then 
+				uts[NowObserveringID].wSelection:Show(false)
+			end
+			
+			uts[targetID].wSelection:Show(true)
+			NowObserveringID = targetID
+		end
+	else
+		if NowObserveringID and uts[NowObserveringID] then 
+			uts[NowObserveringID].wSelection:Show(false)
+		end
+		NowObserveringID = nil
 	end
 end
 
@@ -788,6 +817,7 @@ onEvent["EVENT_ASTRAL_HUB_CHANGED"] = function ( pars )
 		end
 	end
 
+	targetChanged()
 end
 
 onEvent["EVENT_TRANSPORT_POS_CHANGED"] = function ( pars )
@@ -811,12 +841,15 @@ onEvent["EVENT_TRANSPORT_DIRECTION_CHANGED"] = function ( pars )
 	end
 end
 
-onEvent["EVENT_ASTRAL_OBJECT_DESPAWNED"] = function ( pars )
-	del_Obj(pars.objectId)
+onEvent["EVENT_ASTRAL_OBJECTS_CHANGED"] = function ( pars )
+	for _, astralObjID in pairs(pars.spawned) do
+		if astralObjID then add_Obj(astralObjID) end
+	end
+	for _, astralObjID in pairs(pars.despawned) do
+		if astralObjID then del_Obj(astralObjID) end
+	end
 end
-onEvent["EVENT_ASTRAL_OBJECT_SPAWNED"] = function ( pars )
-	add_Obj(pars.objectId)
-end
+
 onEvent["EVENT_ASTRAL_OBJECT_ENABLED_CHANGED"] = function ( pars )
 	local id = pars.objectId
 	local uInfo = uts[ id ]
@@ -830,23 +863,28 @@ onEvent["EVENT_ASTRAL_OBJECT_ENABLED_CHANGED"] = function ( pars )
 	end
 end
 
+onEvent["EVENT_TRANSPORTS_CHANGED"] = function ( pars )
+	if getMyShipID() then 
+		for _, transportID in pairs(pars.spawned) do
+			if transportID then add_Ship(transportID) end
+		end
+	end
+	for _, transportID in pairs(pars.despawned) do
+		if transportID then del_Obj(transportID) end
+	end
+end
 
-onEvent["EVENT_TRANSPORT_SPAWNED"] = function ( pars )
-	-- сюда приходят события даже кгда мы не в астрале!
-	-- exObj( "par", pars )	LogInfo( getMyShipID() )
-	if not getMyShipID() then return end
-	add_Ship(pars.id)
-end
-onEvent["EVENT_TRANSPORT_DESPAWNED"] = function ( pars )
-	del_Obj(pars.id)
+onEvent["EVENT_ASTRAL_UNITS_CHANGED"] = function ( pars )
+	if getMyShipID() then 
+		for _, astralUnitID in pairs(pars.spawned) do
+			if astralUnitID then add_Unit(astralUnitID) end
+		end
+	end
+	for _, astralUnitID in pairs(pars.despawned) do
+		if astralUnitID then del_Obj(astralUnitID) end
+	end
 end
 
-onEvent["EVENT_ASTRAL_UNIT_SPAWNED"] = function ( pars )
-	if getMyShipID() then add_Unit(pars.unitId) end
-end
-onEvent["EVENT_ASTRAL_UNIT_DESPAWNED"] = function ( pars )
-	del_Obj(pars.unitId)
-end
 onEvent["EVENT_ASTRAL_UNIT_HEALTH_PERCENTAGE_CHANGED"] = function ( pars )
 	-- не приходят события сюда ((LogToChat("HHHC")
 	set_HP( uts[pars.unitId])
@@ -1026,6 +1064,11 @@ onEvent["EVENT_TRANSPORT_OBSERVING_STARTED"] = function ( pars )
 		end	
 	end
 	--end
+	targetChanged()
+end
+
+onEvent["EVENT_TRANSPORT_OBSERVING_FINISHED"] = function ( pars )
+	targetChanged()
 end
 
 function GetTimestamp()
@@ -1112,7 +1155,6 @@ function ShortMap_Init( myShipID )
 	local p = get_PS("ShipPlatePlace")
 	ShipPlatePlaceX = p.sizeX/2
 	ShipPlatePlaceY = p.sizeY/2
-
 end
 
 --LogInfo("PS.ShipPlatePlace",PS)

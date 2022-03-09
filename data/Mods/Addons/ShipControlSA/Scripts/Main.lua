@@ -1,5 +1,5 @@
 --- ID корабл€ всегда один после вызова в ангаре - myShipID
-
+local posDebug = false
 local probeKey = '3:'..USDEV_SHIELD..':1'
 
 local riseERR
@@ -45,7 +45,7 @@ local ShieldsNameList = {
 local ShieldEffect = "Core"
 
 function get_MapRadius()
-	return PS.dSizeX + PS.ShipPlatePlace.sizeX/2
+	return PS.MaxMapRadius or 280
 end
 
 local demo
@@ -126,29 +126,31 @@ end
 --function SetMyShipID( id ) myShipID = id end
 
 local function SlotShow( slot, forcetxt )
---[[
---дл€ отладки позиций пушек
-if forcetxt then
-	setText(slot.wt, forcetxt , "ColorWhite", "center", 10, "1", "1")	
-end]]
-	if slot.val then
-		--- показать готовое значение
-		slot.wt:Show( true )
-		slot.wt:SetVal("value", ToWS( slot.valFunc and userFuncts [slot.valFunc] (slot.val) or ""..slot.val ) )
-	else
-		--- показать трочку из откатов устройства
-		local str = ""
-		for i = 0, (slot.actions or 1 ) - 1 do
-			str = str ..":".. getTimeStr( slot.cd and slot.cd[i], slot.icon )
+	if posDebug then
+		--дл€ отладки позиций пушек
+		if forcetxt then
+			setText(slot.wt, forcetxt , "ColorWhite", "center", 10, "1", "1")	
 		end
-
-		if slot.isMissed and PS.ColoredFontSwitch then
-			setText(slot.wt, string.sub(str, 2) , "ColorRed", "center", 14, "1", "1")	
+	else	
+		if slot.val then
+			--- показать готовое значение
+			slot.wt:Show( true )
+			slot.wt:SetVal("value", ToWS( slot.valFunc and userFuncts [slot.valFunc] (slot.val) or ""..slot.val ) )
 		else
-			--slot.wt:SetVal("value", ToWS( string.sub(str, 2) ) )
-			setText(slot.wt, string.sub(str, 2) , "ColorWhite", "center", 14, "1", "1")	
+			--- показать трочку из откатов устройства
+			local str = ""
+			for i = 0, (slot.actions or 1 ) - 1 do
+				str = str ..":".. getTimeStr( slot.cd and slot.cd[i], slot.icon )
+			end
+
+			if slot.isMissed and PS.ColoredFontSwitch then
+				setText(slot.wt, string.sub(str, 2) , "ColorRed", "center", 14, "1", "1")	
+			else
+				--slot.wt:SetVal("value", ToWS( string.sub(str, 2) ) )
+				setText(slot.wt, string.sub(str, 2) , "ColorWhite", "center", 14, "1", "1")	
+			end
+			
 		end
-		
 	end
 end
 
@@ -680,6 +682,21 @@ onEvent["EVENT_SECOND_TIMER"] = function ( pars )
 	end
 end
 
+function isMyShipCorvet()
+	-- если пушки сзади или их больше 8 то это корвет
+	for _, id in pairs(transport.GetDevices(myShipID)) do
+		local deviceInfo = device.GetShipSlotInfo(id)
+		local deviceType = device.GetUsableDeviceType(id)
+		if deviceInfo.side == SHIP_SIDE_REAR and deviceType == USDEV_CANNON then
+			return true
+		end
+		if deviceInfo.interfaceSlot > 8 then
+			return true
+		end
+	end
+	return false
+end
+
 function listDevs()
 	if not myShipID or not transport.CanDrawInterface(myShipID) then return end
 	for _, id in pairs(transport.GetDevices(myShipID)) do
@@ -730,7 +747,6 @@ local function add_slot( id )
 		slot.name = FromWS( object.GetName( id ) ) 
 		slot.quality = itemLib.GetQuality(device.GetItemInstalled(id)).quality
 		slot.w:Show( true )
-		local info = avatar.GetUsableDeviceInfo( id )
 		DeviceHealthChanged( slot )
 		if false then
 		elseif slot.noActions then
@@ -739,6 +755,7 @@ local function add_slot( id )
 				GetCoolDown( slot, action )
 			end
 		else
+			local info = avatar.GetUsableDeviceInfo( id )
 			for action=0, (slot.actions or 1)-1 do
 				if action < GetTableSize( info.actions ) then
 					GetCoolDown( slot, action )
@@ -792,9 +809,15 @@ local function AvatarShip( idIn )
 
 	myShipID = idSHPnew
 	if myShipID and transport.CanDrawInterface(myShipID) then
-
+		-- у бригов одинаковое расположение пушек у лиги и империи, у корветов разные
+		-- узнать чьей фракции корабль нельз€ поэтому дл€ корветов берем фракцию игрока
+		if isMyShipCorvet() then
+			InitCannonPositions(unit.GetFactionId(avatar.GetId()):GetInfo().sysName)
+		else
+			InitCannonPositions("League")		
+		end
+		ApplyCannonPositions()
 		---LogToChat( ""..myShipID )
-		SetImageMyShip( myShipID )
 
 		wtName:SetVal("value",object.GetName(myShipID) )
 		for _, slot in pairs(ControlSlots) do
@@ -827,12 +850,15 @@ local function AvatarShip( idIn )
 	end
 end
 
-onEvent["EVENT_USABLE_DEVICE_SPAWNED"] = function ( pars )
-	local id = pars.id
-	--- тут можно поймать устройства и с других корабей!
-	if not (myShipID and myShipID == device.GetTransport( id ) --[[ and transport.CanDrawInterface(myShipID) ]] ) then return end
-	--- смотрим только свои устройства
-	add_slot(id)
+onEvent["EVENT_USABLE_DEVICES_CHANGED"] = function ( pars )
+	for _, deviceID in pairs(pars.spawned) do
+		if deviceID then
+			--- тут можно поймать устройства и с других корабей!
+			if not (myShipID and myShipID == device.GetTransport( deviceID ) --[[ and transport.CanDrawInterface(myShipID) ]] ) then return end
+			--- смотрим только свои устройства
+			add_slot(deviceID)
+		end
+	end
 end
 
 onEvent["EVENT_AVATAR_TRANSPORT_CHANGED"] = function ( pars )
@@ -1197,6 +1223,8 @@ onReact[ "mouse_left_click" ] = function( reaction )
 		mainForm:GetChildChecked("List", false):Show(false)
 	elseif reaction.widget:GetName() == "savesettings" then
 		toGlobalConfig()
+		common.StateUnloadManagedAddon( "UserAddon/ShipControlSA" )
+		common.StateLoadManagedAddon( "UserAddon/ShipControlSA" )
 	end
 end
 -----------------------------------------
@@ -1207,9 +1235,12 @@ function ShipPanelInit()
 	local pAll = Clone(PS.ShipPlatePlace)
 	pAll.sizeX = PS.ShipPlatePlace.sizeX + PS.dSizeX * 2
 	pAll.sizeY = PS.ShipPlatePlace.sizeY + PS.dSizeY * 2
+	local pMap = Clone(PS.ShipPlatePlace)
+	pMap.sizeX = get_MapRadius() * 2
+	pMap.sizeY = get_MapRadius() * 2
 	-- WCD(descr, name, parent, place, show )
 	wtMainPanel = WCD( dsc.Panel, "MainPanel", nil, pAll, true )
-	wtMainPanel2 = WCD( dsc.Panel, "MainPanel2", nil, pAll, true )
+	wtMainPanel2 = WCD( dsc.Panel, "MainPanel2", nil, pMap, true )
 	wtMainPanel3 = WCD( dsc.Panel, "MainPanel3", nil, pAll, true )
 	
 	wtShipPanel = WCD( dsc.Panel, "ShipPanel", wtMainPanel, { alignX = 3, alignY = 3 }, true )
@@ -1228,7 +1259,11 @@ function ShipPanelInit()
 	else
 		wtRadarPlate = WCD( dsc.Panel, "Radar", wtShipPanel2, { alignX=3, alignY=3, }, false )
 	end
-	wt = WCD( dscButtonCornerCrossRadar, "ButtonCornerCross", wtRadarPlate, { alignX = 1, alignY = 1, highPosX = PS.dSizeX/2, highPosY = PS.dSizeY/2 }, true )
+	if PS.TogetherMode then
+		wt = WCD( dscButtonCornerCrossRadar, "ButtonCornerCross", wtRadarPlate, { alignX = 1, alignY = 1, highPosX = PS.dSizeX/2, highPosY = PS.dSizeY/2 }, true )
+	else
+		wt = WCD( dscButtonCornerCrossRadar, "ButtonCornerCross", wtRadarPlate, { alignX = 1, alignY = 1, highPosX = 30, highPosY = 30 }, true )
+	end
 	wt:SetPriority( 500 )
 	
 	--wtShortPanel = WCD( dsc.Panel, "Short", wtMainPanel, { posX = PS.dSizeX, posY = PS.dSizeY, sizeX = PS.ShipPlatePlace.sizeX, sizeY = 75}, false )
@@ -1252,45 +1287,7 @@ function ShipPanelInit()
 	wp:SetBackgroundTexture( nil )
 	wp:SetBackgroundColor( { r = 0.3, g = 0.35, b = 0.3, a = 1 } )
 	wp:SetPriority( 1 )
-
-	if unit.GetFactionId(avatar.GetId()):GetInfo().sysName == "League" then
-		
-	else
-		--left
-		local tmp1 = PS.ControlSlots['4:'..USDEV_CANNON..':1']
-		local tmp2 = PS.ControlSlots['4:'..USDEV_CANNON..':2']
-		PS.ControlSlots['4:'..USDEV_CANNON..':1'] = PS.ControlSlots['4:'..USDEV_CANNON..':9']
-		PS.ControlSlots['4:'..USDEV_CANNON..':2'] = tmp1
-		tmp1 = PS.ControlSlots['4:'..USDEV_CANNON..':3']
-		PS.ControlSlots['4:'..USDEV_CANNON..':3'] = tmp2
-		tmp2 = PS.ControlSlots['4:'..USDEV_CANNON..':4']
-		PS.ControlSlots['4:'..USDEV_CANNON..':4'] = tmp1
-		tmp1 = PS.ControlSlots['4:'..USDEV_CANNON..':10']
-		PS.ControlSlots['4:'..USDEV_CANNON..':10'] = tmp2
-		PS.ControlSlots['4:'..USDEV_CANNON..':9'] = tmp1
-		
-		
-		tmp1 = PS.ControlSlots['4:'..USDEV_CANNON..':5']
-		PS.ControlSlots['4:'..USDEV_CANNON..':5'] = PS.ControlSlots['4:'..USDEV_CANNON..':8']
-		PS.ControlSlots['4:'..USDEV_CANNON..':8'] = tmp1
-		tmp1 = PS.ControlSlots['4:'..USDEV_CANNON..':6']
-		PS.ControlSlots['4:'..USDEV_CANNON..':6'] = PS.ControlSlots['4:'..USDEV_CANNON..':7']
-		PS.ControlSlots['4:'..USDEV_CANNON..':7'] = tmp1
-		
-		--right
-		tmp1 = PS.ControlSlots['5:'..USDEV_CANNON..':1']
-		tmp2 = PS.ControlSlots['5:'..USDEV_CANNON..':2']
-		PS.ControlSlots['5:'..USDEV_CANNON..':1'] = PS.ControlSlots['5:'..USDEV_CANNON..':9']
-		PS.ControlSlots['5:'..USDEV_CANNON..':2'] = tmp1
-		tmp1 = PS.ControlSlots['5:'..USDEV_CANNON..':3']
-		PS.ControlSlots['5:'..USDEV_CANNON..':3'] = tmp2
-		tmp2 = PS.ControlSlots['5:'..USDEV_CANNON..':4']
-		PS.ControlSlots['5:'..USDEV_CANNON..':4'] = tmp1
-		tmp1 = PS.ControlSlots['5:'..USDEV_CANNON..':10']
-		PS.ControlSlots['5:'..USDEV_CANNON..':10'] = tmp2
-		PS.ControlSlots['5:'..USDEV_CANNON..':9'] = tmp1
-		
-	end
+	
 	ControlSlots = {}
 	--exObj("PS.ControlSlots", PS.ControlSlots )
 	for k, v in pairs(PS.ControlSlots) do
@@ -1459,6 +1456,16 @@ function ShipPanelInit()
 		wt800:Show( false )
 		wt1500:Show( false )
 	end	
+	
+	mainForm:SetPriority(PS.prior)
+end
+
+function ApplyCannonPositions()
+	local wdg = nil
+	for k, v in pairs(PS.ControlSlots) do
+		wdg = wtShipPlate:GetChildUnchecked(k.."_pan", false)
+		wtSetPlace( wdg, v.place)
+	end
 end
 
 ------------- init functions -------------
@@ -1529,7 +1536,6 @@ reset_PS = function()
 	--menuUpdate()
 end
 
-Global("wtShipPanel2",nil)
 
 
 function wtGetDesc(Safe, Name, recursive, flagDel) -- ѕолучить описание виджета, при необходимость уничтожает виджет
@@ -1541,9 +1547,16 @@ function wtGetDesc(Safe, Name, recursive, flagDel) -- ѕолучить описание виджета,
 	return wtSelectBuffColorDesc
 end
 
+function OnEventIngameUnderCursorChanged( params )
+	if params.deviceId then
+		LogToChat(getKeySideTypeSlot(params.deviceId))
+	end
+end
+
 function mainInit()
-	
 	fromGlobalConfig()
+	--cannon pos stored in GlobalConfig may be incorrect - reset to default
+	InitCannonPositions("League")
 	fromConfig()
 	GUIinit()
 	
@@ -1554,7 +1567,9 @@ function mainInit()
 
 	RegisterEventHandlers( onEvent )
 	RegisterReactionHandlers( onReact )
-
+	if posDebug then
+		common.RegisterEventHandler( OnEventIngameUnderCursorChanged, "EVENT_INGAME_UNDER_CURSOR_CHANGED")
+	end
 	AvatarShip()
 
 	wtSetPlace( wtMainPanel, PS.initPlace or {} )
@@ -1599,6 +1614,7 @@ function mainInit()
 		end
 	end	
 	--LogInfo("PS.ShipPlatePlace",PS.ShipPlatePlace)
+
 end
 
 --LogInfo("PS.ShipPlatePlace",PS)

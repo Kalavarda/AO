@@ -6,6 +6,8 @@
     <Item href="MainBtn/MainBtn.(WidgetButton).xdb#xpointer(/WidgetButton)" />
     <Item href="PanelInfo/PanelInfo.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
     <Item href="PanelText/Announce.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+    
+    <Item href="Window/WindowMain/WindowMain.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
   </Children>
   <BackLayer href="" />
   <FrontLayer href="" />

@@ -136,6 +136,37 @@ function AOLocker(params)
 	end
 end
 
+---------------------------------------------------------------------------------------------------
+-- Функция fix 13.0.00.24
+function UnitSpawnedNew( params )
+
+	-- for fix 05.02.2022
+	for i = 0, GetTableSize(params.spawned)-1 do
+		if params.spawned[i] then
+			
+			SpawnUnit( {unitId = params.spawned[i]} )
+
+		end
+	end
+
+end
+
+
+---------------------------------------------------------------------------------------------------
+-- Функция fix 13.0.00.24
+function UnitDespawnedNew( params )
+
+	-- for fix 05.02.2022
+	for i = 0, GetTableSize(params.despawned)-1 do
+		if params.despawned[i] then
+			
+			DespawnUnit( {unitId = params.despawned[i]} )
+
+		end
+	end
+
+end
+
 function Init()
 	DnD.Init(PanelTarget,ButtonSettings,true)
 	--DnD.Init(ButtonControl,ButtonControl,true)
@@ -143,8 +174,11 @@ function Init()
 	common.RegisterReactionHandler( ButtonClick, "RIGHT_CLICK" )
 	common.RegisterEventHandler( AOLocker, "AO_LOCKER_START" )
 	common.RegisterEventHandler( DeadUnit, "EVENT_UNIT_DEAD_CHANGED" )
-	common.RegisterEventHandler( DespawnUnit, "EVENT_UNIT_DESPAWNED" )
-	common.RegisterEventHandler( SpawnUnit, "EVENT_UNIT_SPAWNED" )
+	
+	-- common.RegisterEventHandler( DespawnUnit, "EVENT_UNIT_DESPAWNED" )
+	common.RegisterEventHandler(UnitDespawnedNew, "EVENT_UNITS_CHANGED")
+	-- common.RegisterEventHandler( SpawnUnit, "EVENT_UNIT_SPAWNED" )
+	common.RegisterEventHandler(UnitSpawnedNew, "EVENT_UNITS_CHANGED")
 end
 
 if (avatar.IsExist()) then Init()

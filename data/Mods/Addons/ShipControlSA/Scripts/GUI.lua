@@ -20,80 +20,83 @@ local function settings_init()
 	buttonsave:SetVal("button_label", ToWS(L("Save Settings")))
 	formattxt = ToWS("<html alignx='center' fontsize='14' shadow='1'><r name='value'/></html>")
 	for k, v in pairs(PS) do
-		local typ = common.GetApiType(v)
-		if typ == "string" then
-			local t = {}
-			t.key = k
-			t.main = WCD( dsc.PanelOptions, k, nil, { sizeX = 420, sizeY = 60, posX = 0}, true )
-			t.desc = WCD( dsc.Text, "dsc", t.main, {posY = 10, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
-			t.str = WCD( dsc.Text, "srt", t.main, {posY = 35, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
-			t.str:SetFormat(formattxt)
-			t.desc:SetFormat(formattxt)
-			t.str:SetVal("value", v)
-			t.desc:SetVal("value", L(k))
-			t.buttonlist = WCD( dsc.Button, "list"..k, t.main, { sizeX = 30, sizeY = 30, posX = 120, posY = 30}, true )
-			t.buttonlist:SetVal("button_label", ToWS("v"))
-			t.list = WCD( dsc.Panel, "List", mainForm, { sizeX = 250, sizeY = 200, posX = 0}, false )
-				for k, v in pairs(Targets) do
-				local button = WCD( dsc.Button, "trgt"..v, t.list, { sizeX = 200, sizeY = 30, posX = 5, posY = k*30, alignX = 0, alignY = 0}, true )
-				button:SetVal("button_label", ToWS(v))
+		-- не показываем параметры которые когда-то перестали использоваться
+		if k ~= "HullSizeY" then 
+			local typ = common.GetApiType(v)
+			if typ == "string" then
+				local t = {}
+				t.key = k
+				t.main = WCD( dsc.PanelOptions, k, nil, { sizeX = 420, sizeY = 60, posX = 0}, true )
+				t.desc = WCD( dsc.Text, "dsc", t.main, {posY = 10, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
+				t.str = WCD( dsc.Text, "srt", t.main, {posY = 35, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
+				t.str:SetFormat(formattxt)
+				t.desc:SetFormat(formattxt)
+				t.str:SetVal("value", v)
+				t.desc:SetVal("value", L(k))
+				t.buttonlist = WCD( dsc.Button, "list"..k, t.main, { sizeX = 30, sizeY = 30, posX = 120, posY = 30}, true )
+				t.buttonlist:SetVal("button_label", ToWS("v"))
+				t.list = WCD( dsc.Panel, "List", mainForm, { sizeX = 250, sizeY = 200, posX = 0}, false )
+					for k, v in pairs(Targets) do
+					local button = WCD( dsc.Button, "trgt"..v, t.list, { sizeX = 200, sizeY = 30, posX = 5, posY = k*30, alignX = 0, alignY = 0}, true )
+					button:SetVal("button_label", ToWS(v))
+					end
+				t.value = function(sss)
+					local valText = sss.str:GetValuedText()
+					local ws = common.ExtractWStringFromValuedText( valText )
+					local strin = FromWS( ws )
+					return strin
 				end
-			t.value = function(sss)
-				local valText = sss.str:GetValuedText()
-				local ws = common.ExtractWStringFromValuedText( valText )
-				local strin = FromWS( ws )
-				return strin
-			end
-			wContainer:PushBack( t.main )
-			Options[k] = t
-		end
-		
-		if typ == "number" then
-			local t = {}
-			t.key = k
-			t.main = WCD( dsc.PanelOptions, k, nil, { sizeX = 420, sizeY = 60, posX = 0}, true )
-			t.desc = WCD( dsc.Text, "dsc", t.main, {posY = 10, posX = 0, sizeY = 20, sizeX = 420, alignX = 4 }, true )
-			t.str = WCD( dsc.EditLineNum, "srt", t.main, {posY = 25, alignX = 2, sizeX = 60, posX = 20}, true )
-			t.desc:SetFormat(formattxt)
-			t.desc:SetVal("value", L(k))
-			t.str:SetText(ToWS(tostring(v)))
-			t.value = function(sss)
-				local str = sss.str:GetString()
-				local num = tonumber(str)
-				return num
+				wContainer:PushBack( t.main )
+				Options[k] = t
 			end
 			
-			wContainer:PushBack( t.main )
-			Options[k] = t
-		end
-		
-		if typ == "boolean" then
-			local t = {}
-			t.key = k
-			t.main = WCD( dsc.PanelOptions, k, nil, { sizeX = 420, sizeY = 60, posX = 0}, true )
-			t.desc = WCD( dsc.Text, "dsc", t.main, {posY = 10, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
-			t.str = WCD( dsc.Text, "srt", t.main, {posY = 35, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
-			t.str:SetFormat(formattxt)
-			t.desc:SetFormat(formattxt)
-			t.str:SetVal("value", L(tostring(v)))
-			t.desc:SetVal("value", L(k))
-			t.buttonleft = WCD( dsc.Button, "left"..k, t.main, { sizeX = 30, sizeY = 30, posX = 120, posY = 30}, true )
-			t.buttonleft:SetVal("button_label", ToWS("<"))
-			t.buttonright = WCD( dsc.Button, "right"..k, t.main, { sizeX = 30, sizeY = 30, posX = 270, posY = 30}, true )
-			t.buttonright:SetVal("button_label", ToWS(">"))
-			t.value = function(sss)
-				local valText = sss.str:GetValuedText()
-				local ws = common.ExtractWStringFromValuedText( valText )
-				local strin = FromWS( ws )
+			if typ == "number" then
+				local t = {}
+				t.key = k
+				t.main = WCD( dsc.PanelOptions, k, nil, { sizeX = 420, sizeY = 60, posX = 0}, true )
+				t.desc = WCD( dsc.Text, "dsc", t.main, {posY = 10, posX = 0, sizeY = 20, sizeX = 420, alignX = 4 }, true )
+				t.str = WCD( dsc.EditLineNum, "srt", t.main, {posY = 25, alignX = 2, sizeX = 60, posX = 20}, true )
+				t.desc:SetFormat(formattxt)
+				t.desc:SetVal("value", L(k))
+				t.str:SetText(ToWS(tostring(v)))
+				t.value = function(sss)
+					local str = sss.str:GetString()
+					local num = tonumber(str)
+					return num
+				end
 				
-				local val = toboolean( strin )
-				
-				--LogInfo(sss,valText,ws,strin,val,"=================================")
-				
-				return val
+				wContainer:PushBack( t.main )
+				Options[k] = t
 			end
-			wContainer:PushBack( t.main )
-			Options[k] = t
+			
+			if typ == "boolean" then
+				local t = {}
+				t.key = k
+				t.main = WCD( dsc.PanelOptions, k, nil, { sizeX = 420, sizeY = 60, posX = 0}, true )
+				t.desc = WCD( dsc.Text, "dsc", t.main, {posY = 10, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
+				t.str = WCD( dsc.Text, "srt", t.main, {posY = 35, posX = 0, sizeY = 20, sizeX = 420, highPosX = 0, alignX = WIDGET_ALIGN_BOTH   }, true )
+				t.str:SetFormat(formattxt)
+				t.desc:SetFormat(formattxt)
+				t.str:SetVal("value", L(tostring(v)))
+				t.desc:SetVal("value", L(k))
+				t.buttonleft = WCD( dsc.Button, "left"..k, t.main, { sizeX = 30, sizeY = 30, posX = 120, posY = 30}, true )
+				t.buttonleft:SetVal("button_label", ToWS("<"))
+				t.buttonright = WCD( dsc.Button, "right"..k, t.main, { sizeX = 30, sizeY = 30, posX = 270, posY = 30}, true )
+				t.buttonright:SetVal("button_label", ToWS(">"))
+				t.value = function(sss)
+					local valText = sss.str:GetValuedText()
+					local ws = common.ExtractWStringFromValuedText( valText )
+					local strin = FromWS( ws )
+					
+					local val = toboolean( strin )
+					
+					--LogInfo(sss,valText,ws,strin,val,"=================================")
+					
+					return val
+				end
+				wContainer:PushBack( t.main )
+				Options[k] = t
+			end
 		end
 	end
 end
@@ -142,7 +145,7 @@ function show_tip( pars, active, wBase )
 				local title = pars.slot.id and FromWS( device.GetTitle(pars.slot.id) )
 				if title then
 					frmt = frmt.. "<br />" .. title
-					sizeY = sizeY + 20
+					sizeY = 100
 				end
 				if pars.slot.id then
 					--дополнительное описание предмета
@@ -174,8 +177,8 @@ function show_tip( pars, active, wBase )
 					.. (pars.obj.enemy and "0xFFFF4422" or pars.obj.friend and "0xFF33FFAA" or "0xFF55BBFF") .."'>"..FromWS( pars.obj.name ).."</html>. "
 					.. (pars.obj.description and "<html fontsize='16' color='0xFFAAAAAA'>"..FromWS( pars.obj.description ).."</html> " or "")
 					.. "<br /><html fontsize='16' color='0xFFAAAAAA'>"..FromWS( ShipInfo.ownerName )..gildInfo.."</html>"
-					.. "<br /><html fontsize='16' color='0xFFAAAAAA'>рейтинг: "..tostring( math.ceil(ShipInfo.gearScore) ).."</html>"
-					.. "<br /><html fontsize='16' color='0xFFAAAAAA'>поколение корпуса: "..tostring( math.ceil(ShipInfo.techLevel) ).."</html>"
+					.. "<br /><html fontsize='16' color='0xFFAAAAAA'>"..L("ship_gearscore")..": "..tostring( math.ceil(ShipInfo.gearScore) ).."</html>"
+					.. "<br /><html fontsize='16' color='0xFFAAAAAA'>"..L("ship_hull_generation")..": "..tostring( math.ceil(ShipInfo.techLevel) ).."</html>"
 					--.. "<br /><html fontsize='16' color='0xFFAAAAAA'>улучшения корпуса корабля за аномалии: "..tostring( math.ceil(ShipInfo.quality) ).."</html>"
 					.. "<br />"
 					.. (pars.obj.hpp and frmtHP..pars.obj.hpp.."</html>% " or "")
@@ -190,7 +193,7 @@ function show_tip( pars, active, wBase )
 					.. (pars.obj.hpp and frmtHP..pars.obj.hpp.."</html>% " or "")
 					.. (pars.obj.dist and L(" DIST:<html fontsize='16' color='0xFF5588FF'>")..math.ceil(pars.obj.dist)..L("m").."</html>. " or "")
 					.. (pars.obj.deltaZt and math.abs(pars.obj.deltaZt) > 1 and L(" H:").."<html fontsize='16' color='0xFF5588FF'>"..pars.obj.deltaZt..L("m").."</html>.." or "")
-			
+				sizeY = 100
 			
 			end
 			
@@ -212,7 +215,7 @@ function show_tip( pars, active, wBase )
 
 		if str then wTipTxt:SetVal("value", ToWS( str ) ) end
 		if nameVT then wTipTxt:SetVal("nameVT", nameVT ) end
-		wtSetPlace( wTip, { sizeX = 380, sizeY=sizeY } )
+		wtSetPlace( wTip, { sizeX = 380, sizeY = sizeY } )
 		wtChain( wTip, wBase, 10, 10)
 		--LogToChat( str )
 		--LogInfo(frmt)
@@ -321,61 +324,6 @@ local onoff = { ON, OFF }
 
 function GUIinit()
 
---[[	local strucMenu = 
-	{
-		{ token = "_", label = "COMMANDS", },
-		{ name = "load", label = "Load Settings", onClick = fromConfig_RE },
-		{ name = "save", label = "Save Settings", onClick = toConfig_RE },
-		{ token = "_", label = "", },
-		{ name = "listDevs", label = "List Devices to mods.txt", onClick = listDevs },
-		{ name = "testMode", label = "Test Device Place", type = "_txt", listVals = onoff,
-			tip=L("For test any device Place on the board - to set 'ON' and use the device.") },
-		{ name = "runDemo", label = "Run DEMO mode", onClick = function() if not toggleDemo() then reLoad() end end },
-		{ token = "_", label = "", },
-		{ token = "_", label = "SETTINGS", },
-		{ name = "CannonAim", label = "Cannon Target Icon", type = "_txt", menuItems = { 
-					["system"]=1, ["OrkAura01Glow"]=1, ["CannonAim"]=1, ["CannonAim2"]=1, ["sysCannonAim2"]=1 },
-			valOnSet = valOnSetRe,
-			},
-
-		{ name = "prior", label = "Inteface Priority", type = "_edl", chars=5 },
-		{ name = "overHeat", label = "Ship Over Heat", type = "_edl", chars=3 },
-		{ name = "RadarScale", label = "Radar Scale", type = "_edl", chars=3, valOnSet = valOnSetRe },
-		{ name = "RadarLg", label = "Radar Power koeff", type = "_edl", chars=4, valOnSet = valOnSetRe },
-		{ name = "RadarEdge", label = "Edge of the Radar", type = "_edl", chars=4, valOnSet = valOnSetRe },
-
-		{ name = "DistMobs1", label = "Mobs Radar Radius", type = "_edl", chars=4, valOnSet = valOnSetRe },
-		{ name = "OverMapShow", label = "Show Over Map", type = "_txt", listVals = onoff },
-		{ name = "OverMapPlace", label = "Over Map Place", type ="_lst", 
-			list = {
-				itemSizeX = 300,
-				type = "_edl", --labels = allTypes, vals = sortVals, valLabels = names, defaultVal = SORT_ASC,
-				edited = true, --- можно редактировать список
-				numberKeys = false, --- список состоит из нумерованных списков - очередность элементов влияет на результаты и их можно менять местами
-				},
-			offset = 15, tip = L("window Offset when map open") },
-			
-		{ name = "EnableSelectDblClk", label = "Select by double click", type = "_txt", listVals = onoff },
-		{ name = "ColoredFontSwitch", label = "Use red / green highlight", type = "_txt", listVals = onoff },
-		{ token = "_", label = "", },
-		{ token = "_3", label = "------***------", },
-		{ name = "reset", label = "Reset to Config.txt", onClick = reset_PS_RE },
---		{ name ="listTexts", label =L("list Texts to mod.txt"), onClick = listTexts, tip="for translation - use after showing the entire interface" },
-		
-		
-	}
-
-	mnu = menu{ strucMenu = strucMenu, priority = 500, mouse_overRun = true, fadeOn = 100, fadeOff = 600,
-		valGet = valGet, --- функция для получения значений для полей меню
-		labelShapes = L, --- просто локализация
-		valOnSet = valOnSet, --- функция, которая запомнит изменения сделанные пользователем и выполняет соотвествующие реакции
-		valFormats = valFormats, --- форматы представления (цвет шрифт...) для разных значений
-		valShapes = L, --- просто локализация
-		itemSizeX = 300,
-	}]]
-	--mnu:init({})
-	--DnD:Init( mnu.wtMenu, mnu.wtMenu, false)
-	
 	tip_init()
 	settings_init()
 
