@@ -150,16 +150,31 @@ function On_EVENT_INTERACTION_STARTED(params)
 
 	if params and avatar.IsTalking() then
 	
-		local retQuestList = avatar.GetReturnableQuests()
 		if avatar.HasInteractorCue() then
 			local cue = avatar.GetInteractorCue()
 			if cue then
-				local nextCues = avatar.GetInteractorNextCues()
-				if nextCues[0] then
-					--Chat("nextCues[0]")
-					-- local answer0 = nextCues[0].text
-					-- Chat(answer0)
+				local nextCues = avatar.GetInteractorNextCues()			
+				if nextCues then
+					for id, c in pairs(nextCues) do
+						local actionName = userMods.FromWString(c.name)
+						--Chat(actionName)
+						if string.find(actionName, "Забрать сотворённые ценности") then
+							avatar.SelectInteractorCue(id)
+							break
+						end
+						
+						-- Этих пунктов вообще нет
+						-- if string.find(actionName, "Материализовать астральный коралл") then
+							-- avatar.SelectInteractorCue(id)
+							-- break
+						-- end
+						-- if string.find(actionName, "Чеканить монеты в количестве") then
+							-- avatar.SelectInteractorCue(id)
+							-- break
+						-- end						
+					end
 				end
+				
 				if nextCues[1] then
 					-- Chat(userMods.FromWString(nextCues[1].text))
 					-- local answer0 = nextCues[0].text
@@ -180,6 +195,7 @@ function On_EVENT_INTERACTION_STARTED(params)
 			end
 		end
 		
+		local retQuestList = avatar.GetReturnableQuests()
 		if retQuestList then
 			for i, id in pairs(retQuestList) do
 				local sysName = GetQuestName(id)

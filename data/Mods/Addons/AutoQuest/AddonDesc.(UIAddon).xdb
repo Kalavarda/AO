@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UIAddon>
   <Name>AutoQuest</Name>
-  <AutoStart>false</AutoStart>
+  <AutoStart>true</AutoStart>
   <ScriptFileRefs>
     <Item href="Libs/Chat.lua"/>
 
