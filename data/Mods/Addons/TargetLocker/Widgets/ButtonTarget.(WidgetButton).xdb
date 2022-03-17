@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <WidgetButton>
 	<Name>ButtonTarget</Name>
+	<Priority>800</Priority>
 	<Header>
 		<Prototype href="/Mods/SampleCommon/Button/ButtonRegular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
 	</Header>
@@ -22,5 +23,6 @@
 			<ReactionRightClick>RIGHT_CLICK</ReactionRightClick>
 		</Item>
 	</Variants>
+	<TransparentInput>false</TransparentInput>
 	<clipContent>false</clipContent>
 </WidgetButton>

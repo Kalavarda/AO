@@ -9,15 +9,16 @@
 <Placement>
 		<X>
 			<Align>WIDGET_ALIGN_CENTER</Align>
-			<Size>450</Size>
+			<Size>360</Size>
 			<Pos>150</Pos>
 		</X>
 		<Y>
 			<Align>WIDGET_ALIGN_CENTER</Align>
-			<Size>50</Size>
+			<Size>32</Size>
 		</Y>
 	</Placement>
 	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>true</PickChildrenOnly>
 	<clipContent>false</clipContent>
 	<Visible>true</Visible>
 </WidgetPanel>
