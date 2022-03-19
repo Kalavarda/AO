@@ -7,6 +7,7 @@ ButtonTarget:SetVal("button_label", userMods.ToWString(''))
 ButtonTarget:SetTextColor(nil, { a = 1, r = 1, g = 1, b = 0 })
 
 local IsWorking = false
+local InventorySize = avatar.GetInventorySize() / 3
 
 function ButtonClick(params)
 	if DnD:IsDragging() then
@@ -24,6 +25,11 @@ function ProcessItems()
 	if IsWorking then
 		return
 	end
+
+	if object.IsInCombat(avatar.GetId()) then
+		return
+	end
+
 	IsWorking = true
 
 	local status, retval = pcall(Work)
@@ -41,9 +47,7 @@ function Work()
 		if itemId then
 			local itemInfo = itemLib.GetItemInfo(itemId)
 			if itemInfo.isDressable then
-				if not itemLib.IsCursed(itemId) then
-					Process(index, itemInfo)
-				end
+				Process(index, itemInfo)
 			end
 		end
 	end
@@ -75,6 +79,23 @@ function NeedSale(itemInfo)
 	if slotId then
 		return false
 	else
+		if itemLib.IsCursed(itemInfo.id) then
+			local sum = -GetStatSum(itemInfo)
+			local equipedSum = GetMaxStatSumInInventory(dressSlot)
+			if sum > equipedSum then
+				return false
+			end
+		end
+
+		local itemClassId = itemLib.GetClass(itemInfo.id)
+		if itemClassId then
+			local itemClassInfo = itemClassId and itemLib.GetClassInfo(itemClassId)
+			if itemClassInfo.sysName == "Other" or itemClassInfo.sysName == "DragonRelic" then
+				return false
+			end
+			--Chat(itemClassInfo.sysName)
+		end
+
 		if itemInfo.dressSlot == DRESS_SLOT_MAINHAND or itemInfo.dressSlot == DRESS_SLOT_OFFHAND then
 			local gearScore = itemLib.GetGearScore(itemInfo.id)
 			local maxGS = GetMaxGearscoreInInventory(itemInfo.dressSlot)
@@ -86,6 +107,36 @@ function NeedSale(itemInfo)
 	
 		return true
 	end	
+end
+
+function GetStatSum(itemInfo)
+	local sum = 0
+	local bonus = itemLib.GetBonus(itemInfo.id)
+	if bonus then
+		for k, v in pairs(bonus.specStats) do
+			if v then
+				sum = sum + v.value
+			end
+		end
+	end	
+	return sum
+end
+
+function GetMaxStatSumInInventory(dressSlot)
+	local max = 0
+	local items = avatar.GetInventoryItemIds()
+	for index, itemId in pairs(items) do
+		if itemId then
+			local itemInfo = itemLib.GetItemInfo(itemId)
+			if itemInfo.dressSlot == dressSlot then
+				local sum = GetStatSum(itemInfo)
+				if sum > max then
+					max = sum
+				end
+			end
+		end
+	end
+	return max
 end
 
 function GetMaxGearscoreInInventory(dressSlot)
@@ -110,11 +161,12 @@ function GetEquipSlotFor(itemInfo)
 		return nil
 	end
 
-	--Chat(userMods.FromWString(itemInfo.name))
+	if itemLib.IsCursed(itemInfo.id) then
+		return nil
+	end
+
 	local slotIndex = avatar.GetInventoryItemSlot(itemInfo.id)
-	--Chat("slotIndex")
-	local inventorySize = avatar.GetInventorySize() / 3
-	if slotIndex > inventorySize then
+	if slotIndex > InventorySize then
 		return nil
 	end
 
@@ -141,8 +193,7 @@ function GetItemType(itemInfo)
 end
 
 function GetLastFreeSlot()
-	local inventorySize = avatar.GetInventorySize() / 3
-	for i=inventorySize-1, 0, -1 do
+	for i=InventorySize-1, 0, -1 do
 		local itemId = avatar.GetInventoryItemId(i)
 		if itemId then
 		else
