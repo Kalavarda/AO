@@ -970,6 +970,9 @@ onEvent["EVENT_SCANNED_HUB_OBJECTS_CHANGED"] = function ( pars )
 		add_Hidden( uInfo )
 	end
 end
+--[[
+когда-то было отключено добавлением _ к имени события и не используется
+
 
 local function GetScanerHubInfo()
 
@@ -986,6 +989,7 @@ local function GetScanerHubInfo()
 		exObj2("GetScanerHubInfo2", hInfo )
 	end
 end
+
 
 local usedDevice
 onEvent._EVENT_AVATAR_USED_OBJECT_CHANGED =  function()   ---EVENT_AVATAR_USED_OBJECT_CHANGED
@@ -1014,7 +1018,7 @@ onEvent._EVENT_AVATAR_USED_OBJECT_CHANGED =  function()   ---EVENT_AVATAR_USED_O
 	end
 	usedDevice = newDev
 end
-
+]]
 onEvent["EVENT_NAVIGATION_SCANER_HUB_PVE_INFO"] = function ( pars )
 	exObj2("PVE_INFO", device.GetScanerPvEInfo())
 end

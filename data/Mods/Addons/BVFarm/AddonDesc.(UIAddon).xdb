@@ -4,6 +4,7 @@
   <Name>BVFarm</Name>
   <ScriptFileRefs>
     <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+    <Item href="Libs/Chat.lua"/>
     <Item href="BVFarm.lua"/>
   </ScriptFileRefs>
   <author>Maske</author>

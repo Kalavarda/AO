@@ -19,7 +19,7 @@ function BuffRem( params )
 		-- Получаем информацию о карте где находится юзер
 		local zoneInfo = cartographer.GetCurrentZoneInfo()
 		local zoneName = userMods.FromWString(zoneInfo.zoneName)
-		if zoneName ~= "Башня Порядка" then
+		if zoneName ~= "Башня Порядка" and zoneName ~= "Битва за Каргаллас" then
 			return
 		end
 		

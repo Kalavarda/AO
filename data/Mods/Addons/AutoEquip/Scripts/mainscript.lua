@@ -8,6 +8,9 @@ ButtonTarget:SetTextColor(nil, { a = 1, r = 1, g = 1, b = 0 })
 
 local IsWorking = false
 local InventorySize = avatar.GetInventorySize() / 3
+local DRESS_GRAIN = 21
+local DRESS_ARTEFACT = 48
+local DRESS_DRAGON_TEAR = 17
 
 function ButtonClick(params)
 	if DnD:IsDragging() then
@@ -56,8 +59,7 @@ end
 function Process(inventSlotId, itemInfo)
 	local slotId = GetEquipSlotFor(itemInfo)
 	if slotId then
-		--Chat(userMods.FromWString(itemInfo.name))
-		local status, retval = pcall(avatar.EquipItem, inventSlotId);
+		local status, retval = pcall(avatar.EquipItemByIdToSlot, itemInfo.id, slotId);
 		if status then
 		else
 			Chat(retval)
@@ -90,10 +92,9 @@ function NeedSale(itemInfo)
 		local itemClassId = itemLib.GetClass(itemInfo.id)
 		if itemClassId then
 			local itemClassInfo = itemClassId and itemLib.GetClassInfo(itemClassId)
-			if itemClassInfo.sysName == "Other" or itemClassInfo.sysName == "DragonRelic" then
+			if itemClassInfo.sysName == "DragonRelic" then
 				return false
 			end
-			--Chat(itemClassInfo.sysName)
 		end
 
 		if itemInfo.dressSlot == DRESS_SLOT_MAINHAND or itemInfo.dressSlot == DRESS_SLOT_OFFHAND then
@@ -104,6 +105,13 @@ function NeedSale(itemInfo)
 			end
 			return false
 		end
+	
+		if itemInfo.dressSlot == DRESS_GRAIN or itemInfo.dressSlot == DRESS_ARTEFACT or itemInfo.dressSlot == DRESS_DRAGON_TEAR then
+			return false
+		end
+
+		--Chat(userMods.FromWString(itemInfo.name))
+		--Chat(itemInfo.dressSlot)
 	
 		return true
 	end	
@@ -178,10 +186,10 @@ function GetEquipSlotFor(itemInfo)
 		if equipedItemId then
 			local equipedGearScore = itemLib.GetGearScore(equipedItemId)
 			if gearScore and equipedGearScore and gearScore > equipedGearScore then
-				return i
+				return cur_slot
 			end
 		else
-			return i
+			return cur_slot
 		end
 	end
 

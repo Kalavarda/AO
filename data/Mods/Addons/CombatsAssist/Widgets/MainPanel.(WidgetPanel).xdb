@@ -7,7 +7,6 @@
 		<Item href="Header/Header.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 		<Item href="BuyMenu/BuyMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 		<Item href="SuggestionMenu/SuggestionMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
-		<Item href="UnequipMenu/UnequipMenu.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 	</Children>
 	<BackLayer href="../Textures/EmptyTexture.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
 	<Placement>

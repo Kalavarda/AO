@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetForm>
+	<Name>BagStorageSearch</Name>
+	<Priority>10000</Priority>
+	<Children>
+		<Item href="ButtonBag/ListButtonBag.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="ButtonBag/ButtonTextBag.xdb#xpointer(/WidgetTextView)" />
+		<Item href="ButtonBank/ListButtonBank.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+		<Item href="ButtonBank/ButtonTextBank.xdb#xpointer(/WidgetTextView)" />
+		<Item href="SearchPanelBag/SearchPanelBag.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="SearchPanelBank/SearchPanelBank.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+	</Children>
+	<BackLayer href="" />
+	<FrontLayer href="" />
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>32</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>32</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>ListButtonBank</Name>
+	<Priority>4000</Priority>
+	<Header>
+		<Prototype href="Button/ButtonRegular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>32</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Pos>0</Pos>
+			<Size>30</Size>
+		</Y>
+	</Placement>
+	<Enabled>true</Enabled>
+	<Variants>
+		<Item>
+			<TextFileRef href="ListButtonText.txt" />
+			<Reaction>ShowSearchPanelReactionBank</Reaction>
+			<ReactionRightClick>ShowSearchPanelSettings</ReactionRightClick>
+		</Item>
+	</Variants>
+</WidgetButton>

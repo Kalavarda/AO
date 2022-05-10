@@ -12,5 +12,6 @@
 			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
 		</Y>
 	</Placement>
+	<reactionOnPointing>mouseOverTip</reactionOnPointing>
 	<FormatFileRef href="ListText.txt" />
 </WidgetTextView>

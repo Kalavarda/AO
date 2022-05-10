@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<Name>BagStorageSearch</Name>
+	<localizedNameFileRef href="name.txt"/>
+	<localizedDescFileRef href="desc.txt"/>
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+		<Item href="Libs/Chat.lua"/>
+		<Item href="Libs/Log.lua"/>
+		<Item href="Libs/Misc.lua"/>
+		<Item href="Libs/Sort.lua"/>
+		<Item href="Libs/Widget.lua"/>
+		<Item href="Libs/ScriptAdvancedToString.lua"/>
+		<Item href="Libs/ScriptChatLogExt.lua"/>
+		<Item href="Libs/Utils.lua"/>
+		<Item href="Locales/locales.lua"/>
+		<Item href="Main.luac"/>
+	</ScriptFileRefs>
+	<MainFormId>Main</MainFormId>
+	<Forms>
+		<Item>
+			<Id>Main</Id>
+			<Form href="Widgets/MainForm.(WidgetForm).xdb#xpointer(/WidgetForm)"/>
+		</Item>
+	</Forms>
+<addon_name>BagStorageSearch</addon_name>
+<addon_date>1651946574</addon_date><addon_link>https://alloder.pro/files/file/674-bagstoragesearch/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

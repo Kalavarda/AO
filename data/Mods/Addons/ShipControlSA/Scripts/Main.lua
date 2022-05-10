@@ -755,9 +755,14 @@ local function add_slot( id )
 				GetCoolDown( slot, action )
 			end
 		else
-			local info = avatar.GetUsableDeviceInfo( id )
+			local deviceActionsCnt = 1
+			-- для USDEV_REPAIR спамит предупреждением Game::LuaAvatarGetUsableDeviceInfoPart: Wrong usable device db action: 0
+			if device.GetUsableDeviceType(id) ~= USDEV_REPAIR then
+				local info = avatar.GetUsableDeviceInfo( id )
+				deviceActionsCnt = GetTableSize( info.actions )
+			end
 			for action=0, (slot.actions or 1)-1 do
-				if action < GetTableSize( info.actions ) then
+				if action < deviceActionsCnt then
 					GetCoolDown( slot, action )
 				end
 			end

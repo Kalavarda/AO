@@ -13,7 +13,8 @@
 		<Item href="OptionsPanel/GroupPanel/GroupPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 		<Item href="OptionsPanel/CheckboxPanel/CheckboxPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 		<Item href="OptionsPanel/SliderPanel/SliderPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />	
-		<Item href="OptionsPanel/ListPanel/ListPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />		
+		<Item href="OptionsPanel/ListPanel/ListPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />	
+		<Item href="OptionsPanel/TipPanel/dscBorder.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />	
 	</Children>
 	<Placement>
 		<X>

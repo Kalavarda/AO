@@ -26,7 +26,7 @@ SizePanels.NameFontSize = 12
 --	ПАНЕЛЬ КЛАССОВЫХ РЕСУРСОВ
 ---------------------------------------------------------------
 -- Размер шрифта
-Font.Size = 50
+Font.Size = 48
 
 -- Некромант. Стиль шрифта
 Font.NecromancerStyle = "WarningLogRed"
@@ -71,7 +71,7 @@ Font.PsionicStyle = "LogColorMagenta"
 Font.MageIceInstability = "DamageBlue"
 
 -- Маг. Стихии Огня. Стиль шрифта
-Font.MageFireInstability = "DamageRed"
+Font.MageFireInstability = "DamageRedHidden"
 
 -- Маг. Стихии Молний. Стиль шрифта
 Font.MageEnergyInstability = "navigator"
