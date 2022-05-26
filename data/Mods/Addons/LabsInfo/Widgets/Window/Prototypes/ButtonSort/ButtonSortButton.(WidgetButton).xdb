@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Name>ButtonSort</Name>
+  <Placement>
+    <X>
+      <Align>WIDGET_ALIGN_BOTH</Align>
+    </X>
+    <Y>
+      <Align>WIDGET_ALIGN_BOTH</Align>
+    </Y>
+  </Placement>
+  <IgnoreDblClick>true</IgnoreDblClick>
+  <Variants>
+    <Item>
+      <TextFileRef href="DefaultValue.txt" />
+      <LayerHighlight href="Textures/ButtonSortHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      <PushedOffset x="-2" y="2" />
+      <StateNormal>
+        <LayerMain href="Textures/ButtonSortNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+        <FormatFileRef href="ButtonSortNormal.txt" />
+      </StateNormal>
+      <StatePushed>
+        <LayerMain href="Textures/ButtonSortPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StatePushed>
+      <StateDisabled>
+        <LayerMain href="Textures/ButtonSortDisabled.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+        <FormatFileRef href="ButtonSortDisabled.txt" />
+      </StateDisabled>
+      <ReactionOnUp>true</ReactionOnUp>
+      <Reaction>mouse_left_click</Reaction>
+    </Item>
+    <Item>
+      <TextFileRef href="DefaultValue.txt" />
+      <LayerHighlight href="Textures/ButtonSortHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      <PushedOffset x="-2" y="2" />
+      <StateNormal>
+        <LayerMain href="Textures/ButtonSortNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+        <FormatFileRef href="ButtonSortNormal.txt" />
+      </StateNormal>
+      <StatePushed>
+        <LayerMain href="Textures/ButtonSortPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StatePushed>
+      <StateDisabled>
+        <LayerMain href="Textures/ButtonSortDisabled.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+        <FormatFileRef href="ButtonSortDisabled.txt" />
+      </StateDisabled>
+      <ReactionOnUp>true</ReactionOnUp>
+      <Reaction>mouse_left_click</Reaction>
+    </Item>
+    <Item>
+      <TextFileRef href="DefaultValue.txt" />
+      <LayerHighlight href="Textures/ButtonSortHighlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      <PushedOffset x="-2" y="2" />
+      <StateNormal>
+        <LayerMain href="Textures/ButtonSortNormal.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+        <FormatFileRef href="ButtonSortNormal.txt" />
+      </StateNormal>
+      <StatePushed>
+        <LayerMain href="Textures/ButtonSortPressed.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+      </StatePushed>
+      <StateDisabled>
+        <LayerMain href="Textures/ButtonSortDisabled.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+        <FormatFileRef href="ButtonSortDisabled.txt" />
+      </StateDisabled>
+      <ReactionOnUp>true</ReactionOnUp>
+      <Reaction>mouse_left_click</Reaction>
+    </Item>
+  </Variants>
+  <TextStyle>
+    <Align>ALIGNY_MIDDLE</Align>
+  </TextStyle>
+</WidgetButton>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>SortByLaba</Name>
+  <Header>
+    <Prototype href="../../Prototypes/ButtonSort/ButtonSort.Prototype.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  </Header>
+  <Children>
+    <Item href="SortTitle/SortTitleLaba.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+  </Children>
+  <Placement>
+    <X>
+      <Pos>490</Pos>
+      <Size>80</Size>
+    </X>
+  </Placement>
+</WidgetPanel>

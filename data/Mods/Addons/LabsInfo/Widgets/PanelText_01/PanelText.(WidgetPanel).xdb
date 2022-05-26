@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>PanelText</Name>
+  <Priority>8</Priority>
+  <Children>
+    <Item href="PanelTextTextView.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	<!--<Item href="../MainBtn/MainBtn.(WidgetButton).xdb#xpointer(/WidgetButton)" />-->
+  </Children>
+
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>1080</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TransparentInput>true</TransparentInput>
+	<PickChildrenOnly>false</PickChildrenOnly>
+<!--<Visible>false</Visible>-->
+</WidgetPanel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>SortPanel</Name>
+  <Children>
+    <Item href="SortByName.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="SortByGb.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="SortByBg.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="SortByAk.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="SortByLaba.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+    <Item href="SortByState.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  </Children>
+  <Placement>
+    <X>
+      <Align>WIDGET_ALIGN_BOTH</Align>
+      <Pos>8</Pos>
+      <HighPos>25</HighPos>
+    </X>
+    <Y>
+      <Size>30</Size>
+    </Y>
+  </Placement>
+  <PickChildrenOnly>true</PickChildrenOnly>
+  <Visible>true</Visible>
+</WidgetPanel>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+  <Name>ButtonSelectAll</Name>
+  <Header>
+    <Prototype href="/Mods/SampleCommon/Button/ButtonRegular.Prototype.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  </Header>
+  <Placement>
+    <X>
+      <Align>WIDGET_ALIGN_CENTER</Align>
+      <Size>160</Size>
+      <Pos>-90</Pos>
+    </X>
+    <Y>
+      <Align>WIDGET_ALIGN_HIGH</Align>
+      <HighPos>80</HighPos>
+    </Y>
+  </Placement>
+  <Variants>
+    <Item>
+      <TextFileRef href="DefaultValue.txt" />
+      <Reaction>mouse_left_click</Reaction>
+      <ReactionOnUp>true</ReactionOnUp>
+    </Item>
+  </Variants>
+</WidgetButton>

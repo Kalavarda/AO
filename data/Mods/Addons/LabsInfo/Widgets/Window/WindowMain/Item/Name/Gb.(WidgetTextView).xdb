@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+  <Name>Gb</Name>
+  <Priority>16</Priority>
+  <Placement>
+    <X>
+      <Pos>250</Pos>
+      <Size>80</Size>
+    </X>
+    <Y>  
+      <Align>WIDGET_ALIGN_BOTH</Align>
+    </Y>
+  </Placement>
+  <FormatFileRef href="Gb.txt" />
+  <TransparentInput>true</TransparentInput>
+</WidgetTextView>

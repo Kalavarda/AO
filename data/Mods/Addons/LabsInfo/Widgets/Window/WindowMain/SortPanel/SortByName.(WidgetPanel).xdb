@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>SortByName</Name>
+  <Header>
+    <Prototype href="../../Prototypes/ButtonSort/ButtonSort.Prototype.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+  </Header>
+  
+  <Children>
+    <Item href="SortTitle/SortTitleName.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+  </Children>
+  
+  <Placement>
+    <X>
+      <Pos>0</Pos>
+      <Size>250</Size>
+    </X>
+  </Placement>
+</WidgetPanel>

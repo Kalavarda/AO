@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UITexture>
+  <mipsNumber>1</mipsNumber>
+  <type>DXT5</type>
+  <width>512</width>
+  <height>64</height>
+  <realWidth>512</realWidth>
+  <realHeight>52</realHeight>
+  <disableLODControl>false</disableLODControl>
+  <alphaTex>true</alphaTex>
+  <binaryFileSize>3935</binaryFileSize>
+  <binaryFile href="ItemPressed.(UITexture).bin" />
+</UITexture>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+	<Name>dscBorder</Name>
+	<BackLayer href="Frame104.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
+	<Children>
+		<Item href="dscText.(WidgetTextView).xdb#xpointer(/WidgetTextView)" />
+	</Children>
+	<Placement>
+		<X>
+			<Size>100</Size>
+		</X>
+		<Y>
+			<Size>45</Size>
+		</Y>
+	</Placement>
+
+	<TransparentInput>false</TransparentInput>
+	<PickChildrenOnly>true</PickChildrenOnly>
+
+	<forceReactionOnPointing>false</forceReactionOnPointing>
+
+	<Visible>false</Visible>
+</WidgetPanel>

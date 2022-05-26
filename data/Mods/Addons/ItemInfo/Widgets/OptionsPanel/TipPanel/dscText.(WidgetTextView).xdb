@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>dscText</Name>
+	<Priority>0</Priority>
+	<FormatFileRef href="Text-alignx-right.txt" />
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+		</X>
+		<Y>	
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+		</Y>
+	</Placement>
+	<TextStyle>
+		<multiline>false</multiline>
+		<Align>ALIGNY_MIDDLE</Align>
+	</TextStyle>
+	<TransparentInput>true</TransparentInput>
+	<Visible>true</Visible>
+</WidgetTextView>

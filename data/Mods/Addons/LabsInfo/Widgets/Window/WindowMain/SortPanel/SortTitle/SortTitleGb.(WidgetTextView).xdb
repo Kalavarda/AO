@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+	<Name>SortTitleGb</Name>
+	<Priority>500</Priority>
+	<Placement>
+		<!--<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>1080</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Sizing>WIDGET_SIZING_INTERNAL</Sizing>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+			<Size>0</Size>
+		</Y>-->
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<!--<Align>WIDGET_ALIGN_CENTER</Align>-->
+			<Pos>10</Pos>
+			<HighPos>10</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<!--<Align>WIDGET_ALIGN_CENTER</Align>-->
+			<Pos>5</Pos>
+			<HighPos>1</HighPos>
+		</Y>
+	</Placement>
+	<Visible>true</Visible>
+	<Enabled>true</Enabled>
+	<TabOrder>0</TabOrder>
+	<TransparentInput>true</TransparentInput>
+	<FormatFileRef href="Title.txt" />
+	<TextValues />
+	<TextStyle>
+		<wrapText>false</wrapText>
+		<showClippedSymbol>true</showClippedSymbol>
+		<ellipsis>false</ellipsis>
+	</TextStyle>
+	<minWidth>100</minWidth>
+	<maxWidth>1200</maxWidth>
+</WidgetTextView>

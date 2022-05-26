@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetPanel>
+  <Name>ButtonPanel</Name>
+  <Priority>8</Priority>
+  <Children>
+    <!--<Item href="ButtonSettings.(WidgetButton).xdb#xpointer(/WidgetButton)" />-->
+    <Item href="ButtonSettings/ButtonSettings.(WidgetButton).xdb#xpointer(/WidgetButton)" />
+  </Children>
+  <Placement>
+    <X>
+      <Align>WIDGET_ALIGN_LOW</Align>
+      <Pos>314</Pos>
+      <Size>130</Size>
+    </X>
+    <Y>
+      <Align>WIDGET_ALIGN_CENTER</Align>
+      <Pos>338</Pos>
+      <Size>36</Size>
+    </Y>
+  </Placement>
+  <PickChildrenOnly>true</PickChildrenOnly>
+  <Visible>false</Visible>
+</WidgetPanel>
