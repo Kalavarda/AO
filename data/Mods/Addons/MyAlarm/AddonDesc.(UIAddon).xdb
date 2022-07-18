@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <UIAddon>
-  <Name>ControlsStatistics</Name>
+  <Name>MyAlarm</Name>
   <localizedNameFileRef href="name.txt"/>
   <localizedDescFileRef href="desc.txt"/>
 
   <AutoStart>true</AutoStart>
 
   <ScriptFileRefs>
-    <Item href="Scripts/ControlsStatistics.lua"/>
+	<Item href="Scripts/Chat.lua"/>
+    <Item href="Scripts/MyAlarm.lua"/>
   </ScriptFileRefs>
 
   <texts href=""/>
@@ -19,4 +20,4 @@
   <author>Kalavarda</author>
   <revision>1</revision>
   <update>2022-07-18 21:00:00</update>
-<addon_name>ControlsStatistics</addon_name><addon_date>1645345331</addon_date><addon_link></addon_link></UIAddon>
+<addon_name>MyAlarm</addon_name><addon_date>1645345331</addon_date><addon_link></addon_link></UIAddon>
