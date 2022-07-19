@@ -539,7 +539,7 @@ function CreateList()
 					wtCell[col.MFAME][count]:SetVal( "MFAME", common.FormatInt( members[i].monthFame, "%dK5" ) )
 					wtCell[col.LOYAL][count]:SetVal( "LOYAL", common.FormatInt( members[i].loyalty, "%d" ) )
 					wtCell[col.WFAME][count]:SetVal( "WFAME", common.FormatInt( members[i].longFame, "%dK5" ) )
-					wtCell[col.TAB][count]:SetBackgroundTexture( common.GetAddonRelatedTexture( "TABARD" .. members[i].tabardType ) )
+					wtCell[col.TAB][count]:SetBackgroundTexture(common.GetAddonRelatedTextureGroup("Group01"):GetTexture("TABARD" .. members[i].tabardType))
 				else -- For Friends (ALL versions) and for old Guild versions (AO 1.1.02)
 					wtCell[col.JOIN][count]:SetVal( "JOIN", common.GetEmptyWString() )
 					wtCell[col.AUTH][count]:SetVal( "AUTH", common.GetEmptyWString()  )
@@ -547,14 +547,14 @@ function CreateList()
 					wtCell[col.MFAME][count]:SetVal( "MFAME", common.GetEmptyWString() )
 					wtCell[col.LOYAL][count]:SetVal( "LOYAL", common.GetEmptyWString() )
 					wtCell[col.WFAME][count]:SetVal( "WFAME", common.GetEmptyWString() )
-					wtCell[col.TAB][count]:SetBackgroundTexture( common.GetAddonRelatedTexture( "TABARD0" ) )
+					wtCell[col.TAB][count]:SetBackgroundTexture(common.GetAddonRelatedTextureGroup("Group01"):GetTexture("TABARD0"))
 				end
 --- пол
 				if GuiFriend == "Friend" then
 					if social.GetFriendInfo then -- AO 1.1.04+
-						wtCell[col.TAB][count]:SetBackgroundTexture( common.GetAddonRelatedTexture( "SEX" .. members[i].sex ) )
+						wtCell[col.TAB][count]:SetBackgroundTexture(common.GetAddonRelatedTextureGroup("Group01"):GetTexture("SEX" .. members[i].sex))
 					else
-						wtCell[col.TAB][count]:SetBackgroundTexture( common.GetAddonRelatedTexture( "SEX0" ) )
+						wtCell[col.TAB][count]:SetBackgroundTexture(common.GetAddonRelatedTextureGroup("Group01"):GetTexture("SEX0"))
 					end
 				end
 --- порядковый номер, выделение последнего зашедшего/вышедшего
@@ -636,7 +636,7 @@ function CreateList()
 				if not common.IsEmptyWString( members[i].class ) then
 					local clsName = members[i].sysClassName
 					if clsName then
-						wtCell[col.CLS_ICO][count]:SetBackgroundTexture( common.GetAddonRelatedTexture( clsName ) )
+						wtCell[col.CLS_ICO][count]:SetBackgroundTexture(common.GetAddonRelatedTextureGroup("Group01"):GetTexture(clsName))
 						wtCell[col.CLS_ICO][count]:SetBackgroundColor( ClassColorsIcons[ clsName ] )
 					end
 					if not members[i].isConnect then
@@ -645,7 +645,7 @@ function CreateList()
 						wtCell[col.CLASS][count]:SetClassVal( "class", "tip_green" )
 					end
 				else
-					wtCell[col.CLS_ICO][count]:SetBackgroundTexture( common.GetAddonRelatedTexture( "SEX0" ) )
+					wtCell[col.CLS_ICO][count]:SetBackgroundTexture(common.GetAddonRelatedTextureGroup("Group01"):GetTexture("SEX0"))
 					wtCell[col.CLS_ICO][count]:SetBackgroundColor( { r = 1.0; g = 1.0; b = 1.0; a = 1.0 } )
 				end
 				wtCell[col.CLASS][count]:SetVal( "CLASS", members[i].class )

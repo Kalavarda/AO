@@ -1,10 +1,26 @@
-local CheckIntervalSeconds = 5
+local CheckIntervalSeconds = 10
+local MinRemain = 60 * 1000
 local PvE_Locations = {
-	"Цитадель Нихаза"
+	'Личный аллод',
+	'Цитадель Нихаза',
+	'Изумрудный остров',
+	'Медная гора',
+	'Земля Тысячи Крыльев',
+	'Санаторий "Снежинка"',
+	'Огнехлад',
+	'Изумрудный остров',
+	'Обитель Фении',
+	'Лумисаар',
+	'Безмолвная падь'
 }
 local PvP_Locations = {
+	"Ведьмин яр",
 	"Дикий хутор",
-	"Башня порядка"
+	"Битва за Каргаллас",
+	"Полигон",
+	"Башня Порядка",
+	"Арена Смерти",
+	"Тающий остров"
 }
 local Counter = 0
 
@@ -18,28 +34,40 @@ function Check(zoneName, buffs)
 	local alchemy = false
 	local pvp_def = false
 	local pvp_atack = false
+	local pve_def = false
+	local pve_atack = false
 	local essence_count = 0
 	
 	for i, id in pairs(buffs) do
 		local buffInfo = object.GetBuffInfo(id)
 		local nameBuff = userMods.FromWString(buffInfo.name)
 		if string.find(nameBuff, 'надобье') then
-			if buffInfo.remainingMs > 1000 * 60 then
+			if buffInfo.remainingMs > MinRemain then
 				alchemy = true
 			end
 		end
 		if nameBuff == 'Стойкость поединщика' then
-			if buffInfo.remainingMs > 1000 * 60 then
+			if buffInfo.remainingMs > MinRemain then
 				pvp_def = true
 			end
 		end
 		if nameBuff == 'Доблесть поединщика' then
-			if buffInfo.remainingMs > 1000 * 60 then
+			if buffInfo.remainingMs > MinRemain then
 				pvp_atack = true
+			end
+		end	
+		if nameBuff == 'Живучесть' or nameBuff == 'Осторожность' or nameBuff == 'Стойкость' then
+			if buffInfo.remainingMs > MinRemain then
+				pve_def = true
+			end
+		end
+		if nameBuff == 'Решимость' then
+			if buffInfo.remainingMs > MinRemain then
+				pve_atack = true
 			end
 		end
 		if string.find(nameBuff, 'эссенция') or string.find(nameBuff, 'Экстракт') then
-			if buffInfo.remainingMs > 1000 * 60 then
+			if buffInfo.remainingMs > MinRemain then
 				essence_count = essence_count + 1
 			end
 		end
@@ -48,7 +76,7 @@ function Check(zoneName, buffs)
 	if (not alchemy) or (not pvp_def) or (not pvp_atack) then
 		Chat('----------')
 		if not alchemy then
-			Chat('Нужна алхимка!', "LogColorRed")
+			Chat('Нужна алхимка', "LogColorRed")
 		end
 		if isPvpLocation then
 			if not pvp_def then
@@ -57,9 +85,17 @@ function Check(zoneName, buffs)
 			if not pvp_atack then
 				Chat('Нужна Острая настойка', "LogColorRed")
 			end
-			if essence_count < 2 then
-				Chat('Нужна эссенция или экстракт', "LogColorRed")
+		end
+		if isPveLocation then
+			if not pve_def then
+				Chat('Нужна еда на защиту', "LogColorRed")
 			end
+			if not pve_atack then
+				Chat('Нужна еда на атаку', "LogColorRed")
+			end
+		end
+		if essence_count < 2 then
+			Chat('Нужна эссенция или экстракт', "LogColorRed")
 		end
 	end
 end

@@ -20,6 +20,19 @@ Global("ClassP", userMods.GetGlobalConfigSection("ClassP"))
 -- FUNCTION
 -------------------------------------------------------------------------------
 
+function StopPriestFlare()
+	if ClassP["Flare"] then
+		local children = ResourceBar:GetChildChecked("FanaticismPanel", false):GetNamedChildren()
+		for i = 0, #children - 1 do
+			local wtChild = children[i]
+			local flare = wtChild:GetChildUnchecked("Flare", false)
+			if flare then 
+				flare:DestroyWidget()
+			end
+		end
+	end
+end
+
 function BarrierChanged()
 	local barriers = avatar.GetBarriersInfo()
 	Text:ClearValues()
@@ -480,6 +493,12 @@ function Slash(p)
 		ClassP["Text"] = not ClassP["Text"]
 		MainPanel:Show(ClassP["Text"])
 		userMods.SetGlobalConfigSection("ClassP", ClassP)
+	elseif userMods.FromWString(p.text) == "/cpflare" then
+		ClassP["Flare"] = not ClassP["Flare"]
+		userMods.SetGlobalConfigSection("ClassP", ClassP)
+		if ClassP["Flare"] then
+			StopPriestFlare()
+		end
 	end
 end
 
@@ -493,6 +512,7 @@ function Init()
 		ClassP["Color"] = true
 		ClassP["Pet"] = true
 		ClassP["Text"] = true
+		ClassP["Flare"] = false
 		userMods.SetGlobalConfigSection("ClassP", ClassP)
 	end
 	
@@ -586,6 +606,7 @@ function Init()
 		common.RegisterEventHandler( FanaticismChanged, "EVENT_VARIABLE_VALUE_CHANGED")
 		FanaticismChanged()
 		PriestPlate()
+		StopPriestFlare()
 	end
 	if unit.GetClass(avatar.GetId()).className == "BARD" then
 		common.RegisterEventHandler( DriveChanged, "EVENT_VARIABLE_VALUE_CHANGED")

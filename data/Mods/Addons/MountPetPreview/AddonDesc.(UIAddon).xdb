@@ -20,7 +20,7 @@
 		<Item href="Libs/Utils.lua"/>
     <Item href="Libs/LibDnD.lua"/>
     <Item href="Libs/LibDnD3D.lua"/>
-    <Item href="Scripts/Main.lua"/>
+    <Item href="Scripts/MountPetPreview.lua"/>
   </ScriptFileRefs>
   <texts href=""/>
   <textsGroups>
@@ -47,4 +47,4 @@
   </textsGroups>
   <localizedNameFileRef href="name.txt"/>
   <localizedDescFileRef href="desc.txt"/>
-<addon_name>MountPetPreview</addon_name><addon_date>1640606852</addon_date><addon_link>https://alloder.pro/files/file/688-mountpetpreview/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>
+<addon_name>MountPetPreview</addon_name><addon_date>1655329662</addon_date><addon_link>https://alloder.pro/files/file/688-mountpetpreview/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>

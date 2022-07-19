@@ -20,7 +20,7 @@
 		<Item href="Libs/ScriptChatLogExt.lua"/>
 		<Item href="Libs/Utils.lua"/>	
 
-		<Item href="Scripts/Locales.lua"/>
+		<Item href="Locales/Locales.lua"/>
 		<Item href="Scripts/ItemInfo.lua"/>
 		<Item href="Scripts/UserInterface.lua"/>
 		<Item href="Scripts/Main.lua"/>
@@ -28,4 +28,4 @@
 
 	<localizedNameFileRef href="name.txt"/>
 	<localizedDescFileRef href="desc.txt"/>
-<addon_name>ItemInfo</addon_name><addon_date>1651398455</addon_date><addon_link>https://alloder.pro/files/file/680-iteminfo/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>
+<addon_name>ItemInfo</addon_name><addon_date>1656355593</addon_date><addon_link>https://alloder.pro/files/file/680-iteminfo/?do=download&amp;r=24252&amp;confirm=1&amp;t=1&amp;csrfKey=</addon_link></UIAddon>
