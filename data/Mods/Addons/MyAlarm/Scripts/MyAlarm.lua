@@ -1,7 +1,7 @@
 local CheckIntervalSeconds = 10
 local MinRemain = 60 * 1000
 local PvE_Locations = {
-	'Личный аллод',
+	'Белый колизей',
 	'Цитадель Нихаза',
 	'Изумрудный остров',
 	'Медная гора',
