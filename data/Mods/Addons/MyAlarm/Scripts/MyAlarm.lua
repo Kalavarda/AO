@@ -1,5 +1,5 @@
-local CheckIntervalSeconds = 10
-local MinRemain = 60 * 1000
+local CheckIntervalSeconds = 30
+local MinRemain = 2 * 60 * 1000
 local PvE_Locations = {
 	'Белый колизей',
 	'Цитадель Нихаза',
@@ -66,15 +66,14 @@ function Check(zoneName, buffs)
 				pve_atack = true
 			end
 		end
-		if string.find(nameBuff, 'эссенция') or string.find(nameBuff, 'Экстракт') then
+		if string.find(nameBuff, 'ссенция') or string.find(nameBuff, 'кстракт') then
 			if buffInfo.remainingMs > MinRemain then
 				essence_count = essence_count + 1
 			end
 		end
 	end
 	
-	if (not alchemy) or (not pvp_def) or (not pvp_atack) then
-		Chat('----------')
+	if (not alchemy) or (not pvp_def) or (not pvp_atack)or (not pve_def) or (not pve_atack) or (essence_count < 2) then
 		if not alchemy then
 			Chat('Нужна алхимка', "LogColorRed")
 		end
